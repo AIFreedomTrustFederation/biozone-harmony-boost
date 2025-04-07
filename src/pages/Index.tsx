@@ -6,6 +6,8 @@ import FeatureSection from "@/components/FeatureSection";
 import DualitySection from "@/components/DualitySection";
 import DashboardSection from "@/components/DashboardSection";
 import PresaleSection from "@/components/PresaleSection";
+import GitHubSection from "@/components/GitHubSection";
+import WalletSection from "@/components/WalletSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -17,6 +19,8 @@ const Index = () => {
         <FeatureSection />
         <DualitySection />
         <DashboardSection />
+        <WalletSection />
+        <GitHubSection />
         <PresaleSection />
       </main>
       <Footer />
