@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Loader2 } from "lucide-react";
 
-const WALLET_APP_URL = "https://wallet.aethercoin.com"; // Replace with your actual wallet app URL
+const WALLET_APP_URL = "https://atc.aifreedomtrust.com/wallet"; // Updated wallet app URL
 
 const Wallet = () => {
   useEffect(() => {
