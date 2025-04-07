@@ -107,6 +107,42 @@
       radial-gradient(circle at 75px 75px, rgba(0, 150, 0, 0.15) 2%, transparent 0%);
     background-size: 100px 100px;
   }
+
+  /* New bio-zoe theme patterns */
+  .zoe-pattern {
+    background-color: rgba(255, 255, 255, 0.8);
+    background-image: 
+      radial-gradient(circle at 25px 25px, rgba(36, 131, 193, 0.15) 2%, transparent 0%),
+      radial-gradient(circle at 75px 75px, rgba(36, 131, 193, 0.15) 2%, transparent 0%);
+    background-size: 100px 100px;
+  }
+  
+  .biozoe-gradient {
+    background: linear-gradient(135deg, rgba(77, 153, 77, 0.2) 0%, rgba(54, 191, 250, 0.2) 100%);
+  }
+  
+  .dual-card {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .dual-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(77, 153, 77, 0.1) 0%, rgba(54, 191, 250, 0.1) 100%);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .dual-card:hover::before {
+    opacity: 1;
+  }
 }
 
 .gradient-text {
@@ -139,4 +175,22 @@
 .eco-card-hover:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* New animations for bio-zoe theme */
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 4s infinite ease-in-out;
+}
+
+.bio-zoe-divider {
+  height: 2px;
+  background: linear-gradient(to right, theme('colors.forest.400'), theme('colors.water.400'));
+  margin: 2rem auto;
+  width: 50%;
+  border-radius: 1px;
 }
