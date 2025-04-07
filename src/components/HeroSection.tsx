@@ -18,7 +18,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground md:pr-10">
-              Aether Coin is a revolutionary eco-cryptocurrency designed to protect and preserve our planet's vital ecological zones.
+              <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> is a revolutionary eco-cryptocurrency designed to protect and preserve our planet's vital ecological zones.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -64,7 +64,9 @@ const HeroSection = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-xs text-forest-800/80">Current Value</p>
-                    <p className="text-xl font-bold text-forest-800">1 ATC = $0.0728</p>
+                    <p className="text-xl font-bold text-forest-800">
+                      1 <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> = $0.0728
+                    </p>
                   </div>
                   <div className="px-3 py-1 bg-forest-100 rounded-full text-forest-800 text-sm font-medium">
                     +5.24%

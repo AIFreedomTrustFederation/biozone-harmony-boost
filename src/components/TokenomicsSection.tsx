@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import { Coins, Percent, Wallet, ChartPie, ChartBar, DollarSign, Leaf, Shield, Recycle } from 'lucide-react';
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const tokenDistribution = [
   { name: 'Presale', value: 40, color: '#4d994d' },
@@ -50,10 +51,10 @@ const TokenomicsSection = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            <span className="gradient-text">ATC</span> Tokenomics
+            <span className="gradient-text"><Link to="/tokenomics" className="hover:opacity-90">ATC</Link></span> Tokenomics
           </h2>
           <p className="text-muted-foreground">
-            Understanding the economics and distribution of Aether Token Coin (ATC)
+            Understanding the economics and distribution of <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Token Coin (ATC)</Link>
           </p>
         </div>
         
@@ -64,7 +65,7 @@ const TokenomicsSection = () => {
                 <CardTitle>Token Distribution</CardTitle>
                 <ChartPie className="h-6 w-6 text-forest-600" />
               </div>
-              <CardDescription>Allocation of the 200M ATC total supply</CardDescription>
+              <CardDescription>Allocation of the 200M <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> total supply</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="h-[300px]">
@@ -95,7 +96,7 @@ const TokenomicsSection = () => {
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Coins className="h-5 w-5 text-forest-600 mb-1" />
                   <span className="text-xs text-muted-foreground">Total Supply</span>
-                  <span className="font-bold text-forest-700">200M ATC</span>
+                  <span className="font-bold text-forest-700">200M <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link></span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <DollarSign className="h-5 w-5 text-forest-600 mb-1" />
@@ -140,7 +141,7 @@ const TokenomicsSection = () => {
         <Card className="border-forest-100 mb-16">
           <CardHeader>
             <CardTitle>Token Utility</CardTitle>
-            <CardDescription>How ATC powers the Aether ecosystem</CardDescription>
+            <CardDescription>How <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> powers the Aether ecosystem</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -158,9 +159,9 @@ const TokenomicsSection = () => {
         <div className="text-center max-w-3xl mx-auto">
           <div className="p-6 bg-forest-50 rounded-lg">
             <Wallet className="h-10 w-10 text-forest-600 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Join the ATC Presale</h3>
+            <h3 className="text-xl font-semibold mb-2">Join the <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> Presale</h3>
             <p className="text-muted-foreground mb-4">
-              Be among the first to acquire Aether Token Coin (ATC) and participate in our 
+              Be among the first to acquire <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Token Coin (ATC)</Link> and participate in our 
               mission to protect critical ecosystems worldwide.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">

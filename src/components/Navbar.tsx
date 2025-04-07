@@ -12,7 +12,9 @@ const Navbar = () => {
         <div className="flex items-center gap-2 mr-8">
           <Link to="/" className="flex items-center gap-2">
             <Leaf className="h-6 w-6 text-forest-600" />
-            <span className="text-xl font-display font-semibold text-forest-800">Aether Coin</span>
+            <span className="text-xl font-display font-semibold text-forest-800">
+              <Link to="/tokenomics" className="hover:text-forest-600">Aether Coin</Link>
+            </span>
           </Link>
         </div>
         
