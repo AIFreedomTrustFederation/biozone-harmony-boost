@@ -9,15 +9,29 @@ import { Textarea } from "@/components/ui/textarea";
 import { Code, Database, Link as LinkIcon, Server, Settings } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { toast } from "sonner";
 
 const ApiPage = () => {
   const [apiKey, setApiKey] = useState("");
   const [copied, setCopied] = useState(false);
+  const [email, setEmail] = useState("");
 
   const copyCode = (code: string) => {
     navigator.clipboard.writeText(code);
     setCopied(true);
+    toast.success("Code copied to clipboard");
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleRequestApiKey = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) {
+      toast.error("Please enter your email address");
+      return;
+    }
+    
+    toast.success("API key request submitted. Check your email soon.");
+    setEmail("");
   };
 
   return (
@@ -162,13 +176,17 @@ const ApiPage = () => {
                   
                   <div className="space-y-2">
                     <h3 className="text-lg font-medium">Get Your API Key</h3>
-                    <div className="grid gap-4">
+                    <form onSubmit={handleRequestApiKey} className="grid gap-4">
                       <Input 
                         placeholder="Enter your email to receive an API key" 
                         type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
-                      <Button className="bg-forest-600 hover:bg-forest-700">Request API Key</Button>
-                    </div>
+                      <Button type="submit" className="bg-forest-600 hover:bg-forest-700">
+                        Request API Key
+                      </Button>
+                    </form>
                   </div>
                 </CardContent>
               </Card>
@@ -400,8 +418,13 @@ const trainModel = async () => {
                   </div>
                 </CardContent>
                 <CardFooter className="border-t pt-4">
-                  <Button asChild>
-                    <Link to="https://github.com/aethercoin/sdk-examples">View More Examples on GitHub</Link>
+                  <Button 
+                    onClick={() => {
+                      window.open("https://github.com/aethercoin/sdk-examples", "_blank");
+                      toast.success("Opening GitHub repository in new tab");
+                    }}
+                  >
+                    View More Examples on GitHub
                   </Button>
                 </CardFooter>
               </Card>
@@ -414,10 +437,23 @@ const trainModel = async () => {
               Join our developer community and start building on the FractalCoin node network today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
-              <Button size="lg" className="bg-forest-600 hover:bg-forest-700">
+              <Button 
+                size="lg" 
+                className="bg-forest-600 hover:bg-forest-700"
+                onClick={() => {
+                  toast.success("API access request form will be available soon");
+                }}
+              >
                 Request API Access
               </Button>
-              <Button size="lg" variant="outline">
+              <Button 
+                size="lg" 
+                variant="outline"
+                onClick={() => {
+                  window.open("https://docs.aethercoin.com", "_blank");
+                  toast.success("Opening documentation in new tab");
+                }}
+              >
                 Read the Documentation
               </Button>
             </div>

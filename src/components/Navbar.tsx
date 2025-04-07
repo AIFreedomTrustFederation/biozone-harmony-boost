@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
+import { toast } from "sonner";
 
 const Navbar = () => {
   return (
@@ -30,7 +31,12 @@ const Navbar = () => {
               <NavigationMenuContent>
                 <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
                   <NavigationMenuLink asChild>
-                    <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                    <a 
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      onClick={() => {
+                        toast.info("Biozoe Protection features coming soon");
+                      }}
+                    >
                       <div className="text-sm font-medium leading-none">Biozoe Protection</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Preserving ecological diversity through biozoecurrency
@@ -38,7 +44,12 @@ const Navbar = () => {
                     </a>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                    <a 
+                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                      onClick={() => {
+                        toast.info("Carbon Credits features coming soon");
+                      }}
+                    >
                       <div className="text-sm font-medium leading-none">Carbon Credits</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Tokenizing environmental impact and sustainable actions
@@ -57,7 +68,14 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Button variant="link">Dashboard</Button>
+                <Button 
+                  variant="link"
+                  onClick={() => {
+                    toast.info("Dashboard coming soon");
+                  }}
+                >
+                  Dashboard
+                </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -69,7 +87,14 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Button variant="link">About</Button>
+                <Button 
+                  variant="link"
+                  onClick={() => {
+                    toast.info("About page coming soon");
+                  }}
+                >
+                  About
+                </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -93,8 +118,24 @@ const Navbar = () => {
         </NavigationMenu>
         
         <div className="ml-auto flex items-center gap-2">
-          <Button variant="ghost" size="sm">Sign In</Button>
-          <Button size="sm" className="bg-forest-600 hover:bg-forest-700">Connect Wallet</Button>
+          <Button 
+            variant="ghost" 
+            size="sm"
+            onClick={() => {
+              toast.info("Sign in functionality coming soon");
+            }}
+          >
+            Sign In
+          </Button>
+          <Button 
+            size="sm" 
+            className="bg-forest-600 hover:bg-forest-700"
+            onClick={() => {
+              toast.info("Wallet connection coming soon");
+            }}
+          >
+            Connect Wallet
+          </Button>
         </div>
       </div>
     </header>
