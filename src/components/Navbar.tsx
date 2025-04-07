@@ -2,7 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { Leaf, Wallet } from "lucide-react";
+import { Leaf, Wallet, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
@@ -70,6 +70,16 @@ const Navbar = () => {
                     <Wallet className="mr-2 h-4 w-4" />
                     Wallet
                   </Link>
+                </Button>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Button variant="link" asChild>
+                  <a href="https://atc.aifreedomtrust.com/dapp" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    DApp
+                  </a>
                 </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>

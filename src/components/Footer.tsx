@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Leaf } from "lucide-react";
+import { Leaf, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -35,6 +35,11 @@ const Footer = () => {
               <li><a href="#" className="hover:text-white">FAQs</a></li>
               <li><a href="#" className="hover:text-white">Community</a></li>
               <li><a href="#" className="hover:text-white">Blog</a></li>
+              <li>
+                <a href="https://atc.aifreedomtrust.com/dapp" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center">
+                  DApp <ExternalLink className="ml-1 h-3 w-3" />
+                </a>
+              </li>
             </ul>
           </div>
           
