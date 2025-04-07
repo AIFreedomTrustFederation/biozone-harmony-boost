@@ -10,6 +10,7 @@ import { Loader2 } from "lucide-react";
 // Lazy load pages
 const Index = lazy(() => import("./pages/Index"));
 const Tokenomics = lazy(() => import("./pages/Tokenomics"));
+const Aicon = lazy(() => import("./pages/Aicon"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const Api = lazy(() => import("./pages/Api"));
@@ -34,6 +35,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/tokenomics" element={<Tokenomics />} />
+            <Route path="/aicon" element={<Aicon />} />
             <Route path="/terms-of-service" element={<TermsOfService />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/api" element={<Api />} />

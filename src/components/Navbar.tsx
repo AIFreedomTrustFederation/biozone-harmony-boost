@@ -31,30 +31,20 @@ const Navbar = () => {
               <NavigationMenuContent>
                 <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
                   <NavigationMenuLink asChild>
-                    <a 
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      onClick={() => {
-                        toast.info("Biozoe Protection features coming soon");
-                      }}
-                    >
-                      <div className="text-sm font-medium leading-none">Biozoe Protection</div>
+                    <Link to="/tokenomics" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">Aether Coin (FTC)</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Preserving ecological diversity through biozoecurrency
+                        Rewards for providing storage resources to our decentralized network
                       </p>
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <a 
-                      className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
-                      onClick={() => {
-                        toast.info("Carbon Credits features coming soon");
-                      }}
-                    >
-                      <div className="text-sm font-medium leading-none">Carbon Credits</div>
+                    <Link to="/aicon" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">AICoin (ICON)</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Tokenizing environmental impact and sustainable actions
+                        Rewards for contributing processing power to train our AI models
                       </p>
-                    </a>
+                    </Link>
                   </NavigationMenuLink>
                 </div>
               </NavigationMenuContent>
@@ -63,6 +53,13 @@ const Navbar = () => {
               <NavigationMenuLink asChild>
                 <Button variant="link" asChild>
                   <Link to="/tokenomics">Tokenomics</Link>
+                </Button>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Button variant="link" asChild>
+                  <Link to="/aicon">AICoin</Link>
                 </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
