@@ -5,6 +5,7 @@ import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Target, Sprout, Users, Clock } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const presaleData = [
   { name: 'Stage 1', target: 1000000, price: 0.0425 },
@@ -15,7 +16,7 @@ const presaleData = [
   { name: 'Final', target: 15000000, price: 0.0728 }
 ];
 
-const biozoneGoals = [
+const biozoeGoals = [
   { name: 'Amazon Rainforest', allocation: 25, progress: 0 },
   { name: 'Great Barrier Reef', allocation: 18, progress: 0 },
   { name: 'Congo Basin', allocation: 15, progress: 0 },
@@ -82,7 +83,7 @@ const DashboardSection = () => {
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Sprout className="h-5 w-5 text-forest-600 mb-1" />
                   <span className="text-xs text-muted-foreground">Token Supply</span>
-                  <span className="font-bold text-forest-700">200M ATC</span>
+                  <span className="font-bold text-forest-700">200M <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link></span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Users className="h-5 w-5 text-forest-600 mb-1" />
@@ -95,12 +96,12 @@ const DashboardSection = () => {
           
           <Card className="border-forest-100">
             <CardHeader>
-              <CardTitle>Biozone Funding Goals</CardTitle>
+              <CardTitle>Biozoe Funding Goals</CardTitle>
               <CardDescription>Planned allocation of presale funds</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-8">
-                {biozoneGoals.map((zone, index) => (
+                {biozoeGoals.map((zone, index) => (
                   <div key={index} className="space-y-2">
                     <div className="flex justify-between">
                       <span className="text-sm font-medium">{zone.name}</span>

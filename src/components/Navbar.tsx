@@ -33,7 +33,7 @@ const Navbar = () => {
                 <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
                   <NavigationMenuLink asChild>
                     <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">Biozone Protection</div>
+                      <div className="text-sm font-medium leading-none">Biozoe Protection</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                         Preserving ecological diversity through cryptocurrency
                       </p>

@@ -13,7 +13,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold">
-              <span className="gradient-text">Biozone</span> Currency for a{" "}
+              <span className="gradient-text">Biozoe</span> Currency for a{" "}
               <span className="gradient-text">Sustainable</span> Future
             </h1>
             
@@ -33,7 +33,7 @@ const HeroSection = () => {
             <div className="flex items-center gap-8 pt-6">
               <div className="flex flex-col">
                 <span className="text-3xl font-bold text-forest-700">25+</span>
-                <span className="text-sm text-muted-foreground">Biozones Protected</span>
+                <span className="text-sm text-muted-foreground">Biozoe Protected</span>
               </div>
               
               <div className="flex flex-col">

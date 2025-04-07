@@ -15,7 +15,7 @@ const PresaleSection = () => {
             Join the <span className="gradient-text">Presale</span>
           </h2>
           <p className="text-muted-foreground">
-            Be among the first to secure Aether Coins and contribute to global ecosystem preservation.
+            Be among the first to secure <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coins</Link> and contribute to global ecosystem preservation.
           </p>
         </div>
         
@@ -149,7 +149,7 @@ const PresaleSection = () => {
                   <div className="text-center py-4">
                     <p className="text-muted-foreground mb-4">
                       Your presale contribution will directly fund these conservation efforts once 
-                      Aether Coin is fully launched.
+                      <Link to="/tokenomics" className="text-forest-600 hover:underline mx-1">Aether Coin</Link> is fully launched.
                     </p>
                     <Button variant="outline" className="border-forest-300 text-forest-700" asChild>
                       <Link to="/tokenomics">View Tokenomics</Link>

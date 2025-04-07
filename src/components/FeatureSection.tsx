@@ -2,6 +2,7 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Activity, Leaf, Recycle, Shield, Sprout, TreeDeciduous } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -11,8 +12,8 @@ const features = [
   },
   {
     icon: <Shield className="h-10 w-10 text-forest-600" />,
-    title: "Biozone Protection",
-    description: "Secure and protect endangered biozones through tokenized conservation efforts."
+    title: "Biozoe Protection",
+    description: "Secure and protect endangered biozoe through tokenized conservation efforts."
   },
   {
     icon: <Activity className="h-10 w-10 text-forest-600" />,
@@ -45,7 +46,7 @@ const FeatureSection = () => {
             Powering Environmental <span className="gradient-text">Regeneration</span>
           </h2>
           <p className="text-muted-foreground">
-            Aether Coin uses blockchain technology to create transparent, sustainable funding 
+            <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> uses blockchain technology to create transparent, sustainable funding 
             for critical environmental initiatives around the world.
           </p>
         </div>
