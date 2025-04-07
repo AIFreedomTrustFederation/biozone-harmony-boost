@@ -35,7 +35,7 @@ const Navbar = () => {
                     <a className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                       <div className="text-sm font-medium leading-none">Biozoe Protection</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Preserving ecological diversity through cryptocurrency
+                        Preserving ecological diversity through biozoecurrency
                       </p>
                     </a>
                   </NavigationMenuLink>

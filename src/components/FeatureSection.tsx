@@ -47,7 +47,7 @@ const FeatureSection = () => {
           </h2>
           <p className="text-muted-foreground">
             <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> uses blockchain technology to create transparent, sustainable funding 
-            for critical environmental initiatives around the world.
+            for critical environmental initiatives around the world. As a biozoecurrency, we represent the inverse of traditional eco-cryptocurrencies by uniting both physical and spiritual aspects of existence.
           </p>
         </div>
         

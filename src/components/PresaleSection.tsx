@@ -15,7 +15,7 @@ const PresaleSection = () => {
             Join the <span className="gradient-text">Presale</span>
           </h2>
           <p className="text-muted-foreground">
-            Be among the first to secure <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coins</Link> and contribute to global ecosystem preservation.
+            Be among the first to secure <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coins</Link> and contribute to global ecosystem preservation with our innovative biozoecurrency - the inverse of traditional eco-cryptocurrencies.
           </p>
         </div>
         

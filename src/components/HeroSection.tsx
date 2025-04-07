@@ -18,7 +18,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground md:pr-10">
-              <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> is a revolutionary eco-cryptocurrency designed to protect and preserve our planet's vital ecological zones.
+              <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> is a revolutionary biozoecurrency designed to protect and preserve our planet's vital ecological zones. Unlike traditional eco-cryptocurrencies, our approach focuses on uniting the physical and spiritual aspects of life.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">

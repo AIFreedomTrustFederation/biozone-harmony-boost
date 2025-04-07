@@ -54,7 +54,8 @@ const TokenomicsSection = () => {
             <span className="gradient-text"><Link to="/tokenomics" className="hover:opacity-90">ATC</Link></span> Tokenomics
           </h2>
           <p className="text-muted-foreground">
-            Understanding the economics and distribution of <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Token Coin (ATC)</Link>
+            Understanding the economics and distribution of <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Token Coin (ATC)</Link>, 
+            the foundation of our biozoecurrency - the inverse of traditional eco-cryptocurrencies.
           </p>
         </div>
         

@@ -13,7 +13,7 @@ const Footer = () => {
               <span className="text-xl font-display font-semibold text-white">Aether Coin</span>
             </div>
             <p className="text-forest-200/80 text-sm">
-              A cryptocurrency designed to protect and preserve our planet's vital ecological zones.
+              A biozoecurrency designed to protect and preserve our planet's vital ecological zones, the inverse of traditional eco-cryptocurrencies.
             </p>
           </div>
           
