@@ -62,6 +62,13 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
+                <Button variant="link" asChild>
+                  <Link to="/api">API</Link>
+                </Button>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
                 <Button variant="link">About</Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
