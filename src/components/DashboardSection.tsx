@@ -82,7 +82,7 @@ const DashboardSection = () => {
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Sprout className="h-5 w-5 text-forest-600 mb-1" />
                   <span className="text-xs text-muted-foreground">Token Supply</span>
-                  <span className="font-bold text-forest-700">200M AEC</span>
+                  <span className="font-bold text-forest-700">200M ATC</span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Users className="h-5 w-5 text-forest-600 mb-1" />

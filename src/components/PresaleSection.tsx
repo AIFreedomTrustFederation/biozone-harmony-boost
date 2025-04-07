@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { TabsContent, Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Hourglass, ShieldCheck, Coins, Users, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PresaleSection = () => {
   return (
@@ -68,8 +69,8 @@ const PresaleSection = () => {
                     <Button className="flex-1 bg-forest-600 hover:bg-forest-700">
                       Register Interest <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
-                    <Button className="flex-1" variant="outline">
-                      Download Whitepaper
+                    <Button className="flex-1" variant="outline" asChild>
+                      <Link to="/tokenomics">View Tokenomics</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -150,8 +151,8 @@ const PresaleSection = () => {
                       Your presale contribution will directly fund these conservation efforts once 
                       Aether Coin is fully launched.
                     </p>
-                    <Button variant="outline" className="border-forest-300 text-forest-700">
-                      View Conservation Roadmap
+                    <Button variant="outline" className="border-forest-300 text-forest-700" asChild>
+                      <Link to="/tokenomics">View Tokenomics</Link>
                     </Button>
                   </div>
                 </CardContent>

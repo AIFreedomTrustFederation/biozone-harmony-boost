@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -24,8 +25,8 @@ const HeroSection = () => {
               <Button className="bg-forest-600 hover:bg-forest-700 text-white" size="lg">
                 Get Started
               </Button>
-              <Button variant="outline" size="lg" className="border-forest-300 text-forest-700">
-                Learn More
+              <Button variant="outline" size="lg" className="border-forest-300 text-forest-700" asChild>
+                <Link to="/tokenomics">View Tokenomics</Link>
               </Button>
             </div>
             
@@ -63,7 +64,7 @@ const HeroSection = () => {
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-xs text-forest-800/80">Current Value</p>
-                    <p className="text-xl font-bold text-forest-800">1 AEC = $0.0728</p>
+                    <p className="text-xl font-bold text-forest-800">1 ATC = $0.0728</p>
                   </div>
                   <div className="px-3 py-1 bg-forest-100 rounded-full text-forest-800 text-sm font-medium">
                     +5.24%

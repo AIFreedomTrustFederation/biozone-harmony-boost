@@ -3,21 +3,26 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
 import { Leaf } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
         <div className="flex items-center gap-2 mr-8">
-          <Leaf className="h-6 w-6 text-forest-600" />
-          <span className="text-xl font-display font-semibold text-forest-800">Aether Coin</span>
+          <Link to="/" className="flex items-center gap-2">
+            <Leaf className="h-6 w-6 text-forest-600" />
+            <span className="text-xl font-display font-semibold text-forest-800">Aether Coin</span>
+          </Link>
         </div>
         
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Button variant="link">Home</Button>
+                <Button variant="link" asChild>
+                  <Link to="/">Home</Link>
+                </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
@@ -45,12 +50,14 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Button variant="link">Dashboard</Button>
+                <Button variant="link" asChild>
+                  <Link to="/tokenomics">Tokenomics</Link>
+                </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Button variant="link">Wallet</Button>
+                <Button variant="link">Dashboard</Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
