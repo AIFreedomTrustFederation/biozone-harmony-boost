@@ -10,6 +10,7 @@ import { Loader2 } from "lucide-react";
 // Lazy load pages
 const Index = lazy(() => import("./pages/Index"));
 const Tokenomics = lazy(() => import("./pages/Tokenomics"));
+const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/tokenomics" element={<Tokenomics />} />
+            <Route path="/terms-of-service" element={<TermsOfService />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
