@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
@@ -76,9 +75,19 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Button variant="link" asChild>
-                  <a href="https://atc.aifreedomtrust.com/dapp" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <Link to="/dapp" className="flex items-center">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     DApp
+                  </Link>
+                </Button>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Button variant="link" asChild>
+                  <a href="https://atc.aifreedomtrust.com/dapp" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    DApp (External)
                   </a>
                 </Button>
               </NavigationMenuLink>
