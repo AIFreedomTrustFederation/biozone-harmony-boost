@@ -1,6 +1,9 @@
 
 import { useQuery } from '@tanstack/react-query';
-import { githubApi } from '../services/api/githubApi';
+import GitHubApi from '../services/api/githubApi';
+
+// Create a singleton instance of the GitHub API
+const githubApi = new GitHubApi();
 
 // Hook to fetch repository details
 export const useRepository = (owner: string, repo: string) => {

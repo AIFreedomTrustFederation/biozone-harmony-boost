@@ -1,7 +1,10 @@
 
 import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import { fractalCoinApi, CoinData, Transaction, WalletInfo } from '../services/api/fractalCoinApi';
+import FractalCoinApi, { CoinData, Transaction, WalletInfo } from '../services/api/fractalCoinApi';
+
+// Create a singleton instance of the FractalCoin API
+const fractalCoinApi = new FractalCoinApi('https://api.fractalcoin.io');
 
 // Hook to fetch and manage coin data
 export const useCoinData = () => {
