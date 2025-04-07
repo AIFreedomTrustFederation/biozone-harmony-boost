@@ -7,6 +7,7 @@ import DualitySection from "@/components/DualitySection";
 import DashboardSection from "@/components/DashboardSection";
 import PresaleSection from "@/components/PresaleSection";
 import GitHubSection from "@/components/GitHubSection";
+import WalletSection from "@/components/WalletSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -19,6 +20,7 @@ const Index = () => {
         <DualitySection />
         <DashboardSection />
         <GitHubSection />
+        <WalletSection />
         <PresaleSection />
       </main>
       <Footer />
