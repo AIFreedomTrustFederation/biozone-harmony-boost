@@ -32,7 +32,7 @@ const DashboardSection = () => {
             <span className="gradient-text">Stewardship</span> Scenarios
           </h2>
           <p className="text-muted-foreground">
-            Review illustrative stewardship scenarios for AetherCoin on the future Circleunchain system.
+            Review illustrative stewardship scenarios for biozoe coins on the future Circleunchain system.
           </p>
         </div>
         

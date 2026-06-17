@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2 mr-8">
           <Link to="/" className="flex items-center gap-2">
             <Leaf className="h-6 w-6 text-forest-600" />
-            <span className="text-xl font-display font-semibold text-forest-800">AetherCoin</span>
+            <span className="text-xl font-display font-semibold text-forest-800">Circleunchain</span>
           </Link>
         </div>
         
@@ -31,9 +31,9 @@ const Navbar = () => {
                 <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
                   <NavigationMenuLink asChild>
                     <Link to="/tokenomics" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">AetherCoin</div>
+                      <div className="text-sm font-medium leading-none">Biozoe Coins</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        A biozoe currency planned for the Circleunchain system
+                        Biozoe Coin, AetherCoin, and future coins built on Circleunchain
                       </p>
                     </Link>
                   </NavigationMenuLink>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     <Link to="/aicon" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                       <div className="text-sm font-medium leading-none">Circleunchain System</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        The opposite of blockchain: the foundation that must be built first
+                        The opposite of blockchain: the foundation for biozoe coins
                       </p>
                     </Link>
                   </NavigationMenuLink>

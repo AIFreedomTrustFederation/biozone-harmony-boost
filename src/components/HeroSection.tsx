@@ -17,7 +17,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground md:pr-10">
-              AetherCoin is a biozoe currency planned for the Circleunchain system. Biozoe is the opposite of crypto; Circleunchain is the opposite of blockchain. This prototype defines the system first, before any production currency, custody, or participation release.
+              Circleunchain is the system that must be built first. Biozoe Coin, AetherCoin, and future biozoe coins can be built on top of it. Biozoe is the opposite of crypto; Circleunchain is the opposite of blockchain.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -64,7 +64,7 @@ const HeroSection = () => {
                   <div>
                     <p className="text-xs text-forest-800/80">Circleunchain Concept</p>
                     <p className="text-xl font-bold text-forest-800">
-                      AetherCoin on Circleunchain
+                      Biozoe Coins on Circleunchain
                     </p>
                   </div>
                   <div className="px-3 py-1 bg-forest-100 rounded-full text-forest-800 text-sm font-medium">

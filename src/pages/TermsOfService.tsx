@@ -21,7 +21,7 @@ const TermsOfService = () => {
               these Terms, please do not use our Services.
             </p>
             <p className="text-gray-700 mb-4">
-              These Terms constitute a legally binding agreement between you and AetherCoin regarding your use of the Services.
+              These Terms constitute a legally binding agreement between you and AI Freedom Trust Federation regarding your use of the Services.
             </p>
           </section>
           
@@ -58,7 +58,7 @@ const TermsOfService = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-forest-700 mb-4">4. Biozoe and Circleunchain Disclaimers</h2>
             <p className="text-gray-700 mb-4">
-              AetherCoin is a biozoe currency planned for Circleunchain. Biozoe is positioned as the opposite of crypto, and Circleunchain is positioned as the opposite of blockchain. By using our Services, you acknowledge and agree that:
+              Biozoe Coin, AetherCoin, and other future biozoe coins are planned for Circleunchain. Biozoe is positioned as the opposite of crypto, and Circleunchain is positioned as the opposite of blockchain. By using our Services, you acknowledge and agree that:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
               <li>This prototype does not offer cryptocurrency, a live token sale, or investment returns.</li>

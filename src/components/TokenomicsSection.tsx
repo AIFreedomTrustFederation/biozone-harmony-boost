@@ -54,7 +54,7 @@ const TokenomicsSection = () => {
             <span className="gradient-text"><Link to="/tokenomics" className="hover:opacity-90">Biozoe</Link></span> Circleunchain Model
           </h2>
           <p className="text-muted-foreground">
-            Exploring AetherCoin as a biozoe currency planned for the Circleunchain system.
+            Exploring Circleunchain as the foundation for Biozoe Coin, AetherCoin, and future biozoe coins.
           </p>
         </div>
         
@@ -65,7 +65,7 @@ const TokenomicsSection = () => {
                 <CardTitle>Circle Distribution</CardTitle>
                 <ChartPie className="h-6 w-6 text-forest-600" />
               </div>
-              <CardDescription>Illustrative allocation model for AetherCoin after Circleunchain foundations exist</CardDescription>
+              <CardDescription>Illustrative allocation model for biozoe coins after Circleunchain foundations exist</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="h-[300px]">
@@ -141,7 +141,7 @@ const TokenomicsSection = () => {
         <Card className="border-forest-100 mb-16">
           <CardHeader>
             <CardTitle>Circle Utility</CardTitle>
-            <CardDescription>How AetherCoin could support stewardship as a biozoe currency without becoming crypto</CardDescription>
+            <CardDescription>How biozoe coins could support stewardship without becoming crypto</CardDescription>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -159,7 +159,7 @@ const TokenomicsSection = () => {
         <div className="text-center max-w-3xl mx-auto">
           <div className="p-6 bg-forest-50 rounded-lg">
             <Circle className="h-10 w-10 text-forest-600 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Review the <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin Circleunchain</Link> Concept</h3>
+            <h3 className="text-xl font-semibold mb-2">Review the <Link to="/tokenomics" className="text-forest-600 hover:underline">Circleunchain</Link> Concept</h3>
             <p className="text-muted-foreground mb-4">
               This prototype documents concept-stage assumptions only. It is not crypto, not blockchain, not a live sale, not an investment offer, and not a custody service.
             </p>

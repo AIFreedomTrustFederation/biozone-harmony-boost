@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-forest-700 mb-4">2. Circleunchain Research</h2>
             <p className="text-gray-700 mb-4">
-              AetherCoin explores Circleunchain as the opposite of blockchain for AI and stewardship workflows. 
+              This prototype explores Circleunchain as the opposite of blockchain for AI and stewardship workflows. 
               The current repository is a prototype and does not prove a live encrypted production network.
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">

@@ -214,11 +214,11 @@ const AiCoinSection = () => {
                   <span className="font-medium text-purple-700">ICON (AICoin)</span> models how processing-power contributions could be represented in a governed research network.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-forest-600">AetherCoin</span> models a biozoe currency that depends on the future Circleunchain system.
+                  <span className="font-medium text-forest-600">Biozoe coins</span>, including Biozoe Coin and AetherCoin, depend on the future Circleunchain system.
                 </p>
                 <div className="grid grid-cols-1 gap-2 mt-4">
                   <Button variant="outline" className="border-purple-200 text-purple-700 w-full" asChild>
-                    <Link to="/tokenomics">Learn About AetherCoin</Link>
+                    <Link to="/tokenomics">Learn About Circleunchain</Link>
                   </Button>
                 </div>
               </div>

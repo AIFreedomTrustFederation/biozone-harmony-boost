@@ -11,10 +11,10 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Leaf className="h-6 w-6 text-forest-300" />
-              <span className="text-xl font-display font-semibold text-white">AetherCoin</span>
+              <span className="text-xl font-display font-semibold text-white">Circleunchain</span>
             </div>
             <p className="text-forest-200/80 text-sm">
-              A biozoe currency planned for Circleunchain. The system comes first.
+              The system for Biozoe Coin, AetherCoin, and future biozoe coins. The system comes first.
             </p>
           </div>
           
@@ -55,7 +55,7 @@ const Footer = () => {
         
         <div className="border-t border-forest-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-forest-300/70">
-            &copy; {new Date().getFullYear()} AetherCoin. All rights reserved.
+            &copy; {new Date().getFullYear()} AI Freedom Trust Federation. All rights reserved.
           </div>
           
           <div className="flex gap-4 mt-4 md:mt-0">

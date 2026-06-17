@@ -46,7 +46,7 @@ const FeatureSection = () => {
             Defining the <span className="gradient-text">Circleunchain</span>
           </h2>
           <p className="text-muted-foreground">
-            AetherCoin is a biozoe currency planned for Circleunchain. Biozoe is the opposite of crypto; Circleunchain is the opposite of blockchain. This incubating interface focuses on the system before any live financial product.
+            Circleunchain is the system for Biozoe Coin, AetherCoin, and future biozoe coins. Biozoe is the opposite of crypto; Circleunchain is the opposite of blockchain. This incubating interface focuses on the system before any live financial product.
           </p>
         </div>
         

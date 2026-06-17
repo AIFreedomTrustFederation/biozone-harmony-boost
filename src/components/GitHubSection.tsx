@@ -47,7 +47,7 @@ const GitHubSection = () => {
             <span className="gradient-text">GitHub</span> Integration
           </h2>
           <p className="text-muted-foreground">
-            Track development progress for AetherCoin and the Circleunchain system.
+            Track development progress for Circleunchain and the biozoe coin family.
           </p>
         </div>
         
@@ -130,7 +130,7 @@ const GitHubSection = () => {
                 <Card className="border-forest-100">
                   <CardHeader>
                     <CardTitle>Contributors</CardTitle>
-                    <CardDescription>The people behind AetherCoin</CardDescription>
+                    <CardDescription>The people behind Circleunchain research</CardDescription>
                   </CardHeader>
                   <CardContent>
                     {contribLoading ? (
