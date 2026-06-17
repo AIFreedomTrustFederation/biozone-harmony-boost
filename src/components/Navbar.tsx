@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { Leaf, Wallet, ExternalLink } from "lucide-react";
+import { Leaf, Circle, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center gap-2 mr-8">
           <Link to="/" className="flex items-center gap-2">
             <Leaf className="h-6 w-6 text-forest-600" />
-            <span className="text-xl font-display font-semibold text-forest-800">Aether Coin</span>
+            <span className="text-xl font-display font-semibold text-forest-800">AetherCoin</span>
           </Link>
         </div>
         
@@ -31,17 +31,17 @@ const Navbar = () => {
                 <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
                   <NavigationMenuLink asChild>
                     <Link to="/tokenomics" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">Aether Coin (FTC)</div>
+                      <div className="text-sm font-medium leading-none">AetherCoin</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Rewards for providing storage resources to our decentralized network
+                        A biozoe currency planned for the Circleunchain system
                       </p>
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link to="/aicon" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
-                      <div className="text-sm font-medium leading-none">AICoin (ICON)</div>
+                      <div className="text-sm font-medium leading-none">Circleunchain System</div>
                       <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Rewards for contributing processing power to train our AI models
+                        The opposite of blockchain: the foundation that must be built first
                       </p>
                     </Link>
                   </NavigationMenuLink>
@@ -51,7 +51,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Button variant="link" asChild>
-                  <Link to="/tokenomics">Tokenomics</Link>
+                  <Link to="/tokenomics">Circleunchain</Link>
                 </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -66,8 +66,8 @@ const Navbar = () => {
               <NavigationMenuLink asChild>
                 <Button variant="link" asChild>
                   <Link to="/wallet">
-                    <Wallet className="mr-2 h-4 w-4" />
-                    Wallet
+                    <Circle className="mr-2 h-4 w-4" />
+                    Participation
                   </Link>
                 </Button>
               </NavigationMenuLink>
@@ -145,10 +145,10 @@ const Navbar = () => {
             size="sm" 
             className="bg-forest-600 hover:bg-forest-700"
             onClick={() => {
-              toast.info("Wallet connection coming soon");
+              toast.info("Participation flow coming soon");
             }}
           >
-            Connect Wallet
+            Join Circle
           </Button>
         </div>
       </div>

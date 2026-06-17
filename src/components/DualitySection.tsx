@@ -14,7 +14,7 @@ const DualitySection = () => {
             <span className="text-forest-700">Bio</span> & <span className="text-water-600">Zoe</span>: The Dual Essence
           </h2>
           <p className="text-muted-foreground">
-            Uniting the physical and spiritual dimensions of existence through <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link>.
+            Uniting the physical and spiritual dimensions of existence through <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin</Link>.
           </p>
         </div>
         
@@ -119,7 +119,7 @@ const DualitySection = () => {
               <span className="gradient-text">Biozoe Unity</span>
             </h3>
             <p className="text-lg mb-6 text-muted-foreground">
-              Through <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link>, we recognize that the material world and spiritual essence are not separate domains, 
+              Through <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin</Link>, we recognize that the material world and spiritual essence are not separate domains, 
               but a unified whole. The divine interpenetrates every part of nature while existing beyond it.
             </p>
             <div className="flex justify-center py-8 relative">

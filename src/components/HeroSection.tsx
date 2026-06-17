@@ -13,12 +13,11 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold">
-              <span className="gradient-text">Biozoe</span> Currency for a{" "}
-              <span className="gradient-text">Sustainable</span> Future
+              Build <span className="gradient-text">Circleunchain</span> First
             </h1>
             
             <p className="text-lg text-muted-foreground md:pr-10">
-              <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> is a concept prototype for regenerative value, ecological stewardship, and human-consented wallet research. This interface explores ideas before any production token, wallet, or sale is claimed.
+              AetherCoin is a biozoe currency planned for the Circleunchain system. Biozoe is the opposite of crypto; Circleunchain is the opposite of blockchain. This prototype defines the system first, before any production currency, custody, or participation release.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -26,7 +25,7 @@ const HeroSection = () => {
                 Get Started
               </Button>
               <Button variant="outline" size="lg" className="border-forest-300 text-forest-700" asChild>
-                <Link to="/tokenomics">View Tokenomics</Link>
+                <Link to="/tokenomics">View Circleunchain Model</Link>
               </Button>
             </div>
             
@@ -43,7 +42,7 @@ const HeroSection = () => {
               
               <div className="flex flex-col">
                 <span className="text-3xl font-bold text-forest-700">50K+</span>
-                <span className="text-sm text-muted-foreground">Model Units</span>
+                <span className="text-sm text-muted-foreground">Circle Units</span>
               </div>
             </div>
           </div>
@@ -63,9 +62,9 @@ const HeroSection = () => {
               <div className="absolute bottom-6 left-6 right-6 glass-card p-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-xs text-forest-800/80">Concept Value</p>
+                    <p className="text-xs text-forest-800/80">Circleunchain Concept</p>
                     <p className="text-xl font-bold text-forest-800">
-                      1 <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> = $0.0728
+                      AetherCoin on Circleunchain
                     </p>
                   </div>
                   <div className="px-3 py-1 bg-forest-100 rounded-full text-forest-800 text-sm font-medium">

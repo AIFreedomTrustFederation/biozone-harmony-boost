@@ -8,7 +8,7 @@ const features = [
   {
     icon: <Leaf className="h-10 w-10 text-forest-600" />,
     title: "Ecosystem Restoration",
-    description: "Direct funding to critical ecosystem restoration projects around the world."
+    description: "Research pathways for supporting ecological restoration without extractive crypto mechanics."
   },
   {
     icon: <Shield className="h-10 w-10 text-forest-600" />,
@@ -17,13 +17,13 @@ const features = [
   },
   {
     icon: <Activity className="h-10 w-10 text-forest-600" />,
-    title: "Carbon Tracking",
-    description: "Prototype dashboards for tracking ecological goals, assumptions, and supporting evidence."
+    title: "Circleunchain Records",
+    description: "Prototype records for ecological goals, assumptions, and supporting evidence without blockchain framing."
   },
   {
     icon: <Recycle className="h-10 w-10 text-forest-600" />,
-    title: "Sustainable Rewards",
-    description: "Explore how verified stewardship actions could be acknowledged without implying financial return."
+    title: "Stewardship Acknowledgment",
+    description: "Explore how verified stewardship actions could be acknowledged without speculation or financial-return promises."
   },
   {
     icon: <Sprout className="h-10 w-10 text-forest-600" />,
@@ -43,10 +43,10 @@ const FeatureSection = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Powering Environmental <span className="gradient-text">Regeneration</span>
+            Defining the <span className="gradient-text">Circleunchain</span>
           </h2>
           <p className="text-muted-foreground">
-            <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> is an incubating interface for regenerative value research. It explores transparent funding, ecological stewardship, and consent-centered wallet ideas without presenting those ideas as a live financial product.
+            AetherCoin is a biozoe currency planned for Circleunchain. Biozoe is the opposite of crypto; Circleunchain is the opposite of blockchain. This incubating interface focuses on the system before any live financial product.
           </p>
         </div>
         

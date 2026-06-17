@@ -32,7 +32,7 @@ const DashboardSection = () => {
             <span className="gradient-text">Stewardship</span> Scenarios
           </h2>
           <p className="text-muted-foreground">
-            Review illustrative stewardship scenarios for the incubating Aether Coin concept.
+            Review illustrative stewardship scenarios for AetherCoin on the future Circleunchain system.
           </p>
         </div>
         
@@ -83,7 +83,7 @@ const DashboardSection = () => {
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Sprout className="h-5 w-5 text-forest-600 mb-1" />
                   <span className="text-xs text-muted-foreground">Modeled Supply</span>
-                  <span className="font-bold text-forest-700">200M <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link></span>
+                  <span className="font-bold text-forest-700">200M Biozoe</span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Users className="h-5 w-5 text-forest-600 mb-1" />

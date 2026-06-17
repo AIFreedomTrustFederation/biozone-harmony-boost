@@ -203,10 +203,10 @@ const AiCoinSection = () => {
           <Card className="border-purple-100">
             <CardHeader>
               <div className="flex items-center justify-between">
-                <CardTitle>Token Ecosystem</CardTitle>
+                <CardTitle>Research Ecosystem</CardTitle>
                 <ArrowUpRight className="h-6 w-6 text-purple-600" />
               </div>
-              <CardDescription>Understanding how FTC and ICON work together</CardDescription>
+              <CardDescription>Understanding how AetherCoin and ICON research relate</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -214,11 +214,11 @@ const AiCoinSection = () => {
                   <span className="font-medium text-purple-700">ICON (AICoin)</span> models how processing-power contributions could be represented in a governed research network.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-forest-600">FTC (Aether Coin)</span> models how storage stewardship could be tracked in future decentralized infrastructure.
+                  <span className="font-medium text-forest-600">AetherCoin</span> models a biozoe currency that depends on the future Circleunchain system.
                 </p>
                 <div className="grid grid-cols-1 gap-2 mt-4">
                   <Button variant="outline" className="border-purple-200 text-purple-700 w-full" asChild>
-                    <Link to="/tokenomics">Learn About Aether Coin (FTC)</Link>
+                    <Link to="/tokenomics">Learn About AetherCoin</Link>
                   </Button>
                 </div>
               </div>

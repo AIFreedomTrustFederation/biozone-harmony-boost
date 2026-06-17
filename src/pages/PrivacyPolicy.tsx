@@ -16,15 +16,15 @@ const PrivacyPolicy = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-forest-700 mb-4">1. Introduction</h2>
             <p className="text-gray-700 mb-4">
-              This Privacy Policy describes the intended privacy posture for this Aether Coin concept prototype. 
+              This Privacy Policy describes the intended privacy posture for this AetherCoin and Circleunchain concept prototype. 
               It should be reviewed before any production service, wallet, API, or data-processing workflow is launched.
             </p>
           </section>
           
           <section className="mb-10">
-            <h2 className="text-2xl font-semibold text-forest-700 mb-4">2. FractalCoin Node Network Research</h2>
+            <h2 className="text-2xl font-semibold text-forest-700 mb-4">2. Circleunchain Research</h2>
             <p className="text-gray-700 mb-4">
-              Aether Coin explores a future FractalCoin node network model for AI and stewardship workflows. 
+              AetherCoin explores Circleunchain as the opposite of blockchain for AI and stewardship workflows. 
               The current repository is a prototype and does not prove a live encrypted production network.
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
               <li>Federated learning and zero-knowledge ideas remain research directions unless implemented and audited</li>
             </ul>
             <p className="text-gray-700 mb-4">
-              Future claims about blockchain, AI training, privacy, or data security must be backed by implementation evidence and review.
+              Future claims about Circleunchain, AI training, privacy, or data security must be backed by implementation evidence and review.
             </p>
           </section>
           
@@ -45,7 +45,7 @@ const PrivacyPolicy = () => {
             </p>
             <h3 className="text-lg font-medium text-forest-600 mt-4 mb-2">3.1 Personal Information</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-              <li>Basic account details: name, email address, wallet address</li>
+              <li>Basic account details: name, email address, and optional participation identifiers</li>
               <li>Modeled transaction or stewardship data if future prototypes enable those workflows</li>
               <li>Profile information you choose to provide</li>
             </ul>
@@ -87,7 +87,7 @@ const PrivacyPolicy = () => {
               <li>Encryption appropriate to the data and threat model</li>
               <li>Audit logs for sensitive access paths</li>
               <li>Documented storage and key-management boundaries</li>
-              <li>Security reviews before public wallet, API, or custody claims</li>
+              <li>Security reviews before public participation, API, or custody claims</li>
               <li>Dependency and deployment audits</li>
             </ul>
             <p className="text-gray-700 mb-4">
@@ -109,7 +109,7 @@ const PrivacyPolicy = () => {
               <li>Data portability</li>
             </ul>
             <p className="text-gray-700 mb-4">
-              To exercise these rights, please contact us at privacy@aethercoin.example.com.
+              To exercise these rights, please contact us through AI Freedom Trust Federation.
             </p>
           </section>
           
@@ -129,7 +129,7 @@ const PrivacyPolicy = () => {
               please contact us at:
             </p>
             <p className="text-gray-700 mb-4">
-              privacy@aethercoin.example.com
+              AI Freedom Trust Federation
             </p>
           </section>
           

@@ -15,7 +15,7 @@ const PresaleSection = () => {
             Join the <span className="gradient-text">Research List</span>
           </h2>
           <p className="text-muted-foreground">
-            Follow the <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> concept as it develops. This prototype does not offer a live token sale, investment product, or wallet custody service.
+            Follow the <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin</Link> concept as it develops. This prototype does not offer a live crypto token sale, investment product, or wallet custody service.
           </p>
         </div>
         
@@ -52,7 +52,7 @@ const PresaleSection = () => {
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center text-forest-700 font-semibold">2</div>
                       <div>
                         <h3 className="font-medium text-lg">Review the Concept</h3>
-                        <p className="text-muted-foreground">Read the tokenomics and stewardship assumptions before treating any idea as more than research.</p>
+                        <p className="text-muted-foreground">Read the Circleunchain and stewardship assumptions before treating any idea as more than research.</p>
                       </div>
                     </div>
                     
@@ -60,7 +60,7 @@ const PresaleSection = () => {
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center text-forest-700 font-semibold">3</div>
                       <div>
                         <h3 className="font-medium text-lg">Wait for Verified Releases</h3>
-                        <p className="text-muted-foreground">Production wallet, token, or sale claims require separate documentation, legal review, and security review.</p>
+                        <p className="text-muted-foreground">Production participation, custody, or value claims require separate documentation, legal review, and security review.</p>
                       </div>
                     </div>
                   </div>
@@ -70,7 +70,7 @@ const PresaleSection = () => {
                       Register Interest <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
                     <Button className="flex-1" variant="outline" asChild>
-                      <Link to="/tokenomics">View Tokenomics</Link>
+                      <Link to="/tokenomics">View Circleunchain Model</Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -98,8 +98,8 @@ const PresaleSection = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="flex flex-col p-4 bg-forest-50 rounded-lg">
                       <Coins className="h-6 w-6 text-forest-600 mb-2" />
-                      <h3 className="font-medium mb-1">Token Model</h3>
-                      <p className="text-sm text-muted-foreground">Define supply, allocation, and utility assumptions without implying price or return.</p>
+                      <h3 className="font-medium mb-1">AetherCoin Model</h3>
+                      <p className="text-sm text-muted-foreground">Define participation, allocation, and utility assumptions without implying crypto speculation, price, or return.</p>
                     </div>
                     
                     <div className="flex flex-col p-4 bg-forest-50 rounded-lg">
@@ -148,10 +148,10 @@ const PresaleSection = () => {
                   
                   <div className="text-center py-4">
                     <p className="text-muted-foreground mb-4">
-                      These figures are placeholders for research modeling. No live contribution or token sale is active in this prototype.
+                      These figures are placeholders for research modeling. No live contribution, crypto sale, or custody service is active in this prototype.
                     </p>
                     <Button variant="outline" className="border-forest-300 text-forest-700" asChild>
-                      <Link to="/tokenomics">View Tokenomics</Link>
+                      <Link to="/tokenomics">View Circleunchain Model</Link>
                     </Button>
                   </div>
                 </CardContent>

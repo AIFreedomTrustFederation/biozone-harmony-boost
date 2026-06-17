@@ -7,9 +7,9 @@ import { Wallet, ArrowRight, Clock, BarChart3, Send, Plus, Download } from "luci
 import { Link } from "react-router-dom";
 
 const transactions = [
-  { id: 1, type: "Received", amount: "+2.5 ATC", from: "0x3a8...7b2c", date: "2 hours ago" },
-  { id: 2, type: "Staked", amount: "-5.0 ATC", to: "Ecosystem Pool", date: "1 day ago" },
-  { id: 3, type: "Sent", amount: "-1.2 ATC", to: "0x7f4...9d3a", date: "3 days ago" },
+  { id: 1, type: "Recorded", amount: "+2.5 Biozoe", from: "Circle Node A", date: "2 hours ago" },
+  { id: 2, type: "Committed", amount: "-5.0 Biozoe", to: "Ecosystem Pool", date: "1 day ago" },
+  { id: 3, type: "Shared", amount: "-1.2 Biozoe", to: "Circle Node B", date: "3 days ago" },
 ];
 
 const WalletSection = () => {
@@ -21,7 +21,7 @@ const WalletSection = () => {
             <span className="gradient-text">Aether Wallet</span> Interface
           </h2>
           <p className="text-muted-foreground">
-            Explore a concept wallet interface for <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link>. This prototype does not provide custody, transaction signing, or production wallet security.
+            Explore a concept participation interface for <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin</Link>. This prototype does not provide custody, transaction signing, or production wallet security.
           </p>
         </div>
         
@@ -50,7 +50,7 @@ const WalletSection = () => {
                 <TabsContent value="dashboard" className="space-y-6">
                   <div className="text-center py-6">
                     <p className="text-sm text-muted-foreground mb-1">Current Balance</p>
-                    <h3 className="text-4xl font-bold text-forest-800">45.28 ATC</h3>
+                    <h3 className="text-4xl font-bold text-forest-800">45.28 Biozoe</h3>
                     <p className="text-sm text-forest-600">≈ $3.29 USD</p>
                   </div>
                   
@@ -130,7 +130,7 @@ const WalletSection = () => {
                 <TabsContent value="stake" className="space-y-6">
                   <div className="text-center py-4">
                     <h3 className="text-lg font-medium mb-1">Total Staked</h3>
-                    <p className="text-3xl font-bold text-forest-800">12.5 ATC</p>
+                    <p className="text-3xl font-bold text-forest-800">12.5 Biozoe</p>
                     <p className="text-sm text-muted-foreground">Current APY: 8.2%</p>
                   </div>
                   

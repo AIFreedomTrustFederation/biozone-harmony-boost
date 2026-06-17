@@ -9,9 +9,9 @@ const DApp = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-forest-50 p-4">
       <div className="max-w-md w-full bg-white shadow-md rounded-lg p-8 space-y-6">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-forest-800 mb-2">Aether Coin DApp</h1>
+          <h1 className="text-2xl font-bold text-forest-800 mb-2">AetherCoin Circle Interface</h1>
           <p className="text-gray-600">
-            This is a placeholder for the Aether Coin DApp. The custom implementation will be installed from the GitHub repository.
+            This is a placeholder for the AetherCoin participation interface that depends on the future Circleunchain system. The custom implementation will be installed from the GitHub repository.
           </p>
         </div>
         

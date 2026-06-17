@@ -42,10 +42,10 @@ const ApiPage = () => {
         <div className="container py-12 space-y-8">
           <div className="text-center space-y-4">
             <h1 className="text-4xl font-bold font-display text-forest-800">
-              Aether Coin API Integration
+              AetherCoin Circleunchain API Research
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Review concept API shapes for a future FractalCoin node network. These examples are documentation prototypes, not live production endpoints.
+              Review concept API shapes for future Circleunchain stewardship records. These examples are documentation prototypes, not live production endpoints.
             </p>
           </div>
           
@@ -79,7 +79,7 @@ const ApiPage = () => {
                   <div className="space-y-4">
                     <h3 className="text-lg font-medium">Core Features</h3>
                     <ul className="space-y-2 list-disc pl-6">
-                      <li>Concept access patterns for a future FractalCoin node network</li>
+                      <li>Concept access patterns for future Circleunchain stewardship records</li>
                       <li>Research flows for distributed model-work coordination</li>
                       <li>Prototype transaction and stewardship record shapes</li>
                       <li>Wallet-interface and commitment-model examples</li>
@@ -237,7 +237,7 @@ const ApiPage = () => {
                     API Endpoints
                   </CardTitle>
                   <CardDescription>
-                    Proposed endpoints for future FractalCoin network review
+                    Proposed endpoints for future Circleunchain review
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -434,7 +434,7 @@ const trainModel = async () => {
           <div className="text-center space-y-4 max-w-2xl mx-auto">
             <h2 className="text-2xl font-bold text-forest-800">Ready to Get Started?</h2>
             <p className="text-muted-foreground">
-              Join the developer research list and help validate the FractalCoin network concept before any production service is offered.
+              Join the developer research list and help validate the Circleunchain concept before any production service is offered.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
               <Button 

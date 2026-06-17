@@ -1,6 +1,6 @@
-# Biozone Harmony Boost
+# AetherCoin Biozoe Currency on Circleunchain
 
-Incubating Aether/Biozone front-end prototype for regenerative value, ecological stewardship, tokenomics modeling, and wallet-interface research.
+Incubating AetherCoin front-end prototype for regenerative value, ecological stewardship, Circleunchain modeling, and participation-interface research.
 
 ## Federation Status
 
@@ -8,24 +8,24 @@ Incubating Aether/Biozone front-end prototype for regenerative value, ecological
 | --- | --- |
 | Status | Incubating live service |
 | Federation layer | Stewardship / Research |
-| Repository role | Live concept UI for Aether Coin Biozone stewardship and wallet research |
+| Repository role | Live concept UI for AetherCoin as a biozoe currency planned for Circleunchain |
 | Visibility | Public |
 | Primary language | TypeScript / React / Vite |
 
 ## Purpose
 
-`biozone-harmony-boost` is a concept-stage interface for exploring regenerative value language, ecological stewardship dashboards, tokenomics assumptions, wallet UI flows, and API shapes connected to the larger AI Freedom Trust Federation ecosystem.
+`biozone-harmony-boost` is a concept-stage interface for exploring AetherCoin as a biozoe currency, Circleunchain assumptions, ecological stewardship dashboards, participation UI flows, and API shapes connected to the larger AI Freedom Trust Federation ecosystem.
 
-This repository is a live public web service for the concept interface. It is not a live token sale, wallet custody service, investment product, audited blockchain system, or production API. It is a research prototype that can inform future work in `Aether_Coin_biozonecurrency`.
+This repository is a live public web service for the concept interface. AetherCoin is a biozoe currency that will be built on the Circleunchain system. Biozoe is the opposite of crypto; Circleunchain is the opposite of blockchain. The system must be built first. This is not a live token sale, wallet custody service, investment product, audited blockchain system, or production API. It is a research prototype that can inform future work in `Aether_Coin_biozonecurrency`.
 
 ## Current Capabilities
 
 - Vite + React + TypeScript single-page application.
 - Tailwind/shadcn-style component system.
-- Aether Coin landing, tokenomics, wallet concept, API concept, DApp placeholder, privacy, and terms pages.
+- AetherCoin landing, Circleunchain model, participation concept, API concept, DApp placeholder, privacy, and terms pages.
 - GitHub repository information section.
 - Production build through Vite.
-- Public-claims language now labels token, wallet, API, and network content as concept-stage research.
+- Public-claims language now labels value, participation, API, and network content as concept-stage research.
 - GitHub Pages deployment workflow.
 
 ## Setup
