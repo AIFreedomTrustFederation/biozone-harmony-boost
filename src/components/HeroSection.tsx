@@ -18,7 +18,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg text-muted-foreground md:pr-10">
-              <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> is a revolutionary biozoecurrency designed to protect and preserve our planet's vital ecological zones. Unlike traditional eco-cryptocurrencies, our approach focuses on uniting the physical and spiritual aspects of life.
+              <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link> is a concept prototype for regenerative value, ecological stewardship, and human-consented wallet research. This interface explores ideas before any production token, wallet, or sale is claimed.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -33,17 +33,17 @@ const HeroSection = () => {
             <div className="flex items-center gap-8 pt-6">
               <div className="flex flex-col">
                 <span className="text-3xl font-bold text-forest-700">25+</span>
-                <span className="text-sm text-muted-foreground">Biozoe Protected</span>
+                <span className="text-sm text-muted-foreground">Concept Zones</span>
               </div>
               
               <div className="flex flex-col">
                 <span className="text-3xl font-bold text-forest-700">10K+</span>
-                <span className="text-sm text-muted-foreground">Active Users</span>
+                <span className="text-sm text-muted-foreground">Prototype Users</span>
               </div>
               
               <div className="flex flex-col">
                 <span className="text-3xl font-bold text-forest-700">50K+</span>
-                <span className="text-sm text-muted-foreground">Tokens Issued</span>
+                <span className="text-sm text-muted-foreground">Model Units</span>
               </div>
             </div>
           </div>
@@ -51,7 +51,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="w-full h-[450px] rounded-xl overflow-hidden shadow-xl animate-float">
               <div className="absolute inset-0 bg-gradient-radial from-forest-300/20 to-forest-600/40 rounded-xl overflow-hidden">
-                <div className="absolute inset-0 bg-[url('/src/assets/earth-pattern.png')] opacity-30 mix-blend-overlay"></div>
+                <div className="absolute inset-0 zoe-pattern opacity-30 mix-blend-overlay"></div>
               </div>
               <img 
                 src="https://images.unsplash.com/photo-1498429089284-41f8cf3ffd39?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
@@ -63,13 +63,13 @@ const HeroSection = () => {
               <div className="absolute bottom-6 left-6 right-6 glass-card p-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-xs text-forest-800/80">Current Value</p>
+                    <p className="text-xs text-forest-800/80">Concept Value</p>
                     <p className="text-xl font-bold text-forest-800">
                       1 <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> = $0.0728
                     </p>
                   </div>
                   <div className="px-3 py-1 bg-forest-100 rounded-full text-forest-800 text-sm font-medium">
-                    +5.24%
+                    Research
                   </div>
                 </div>
               </div>

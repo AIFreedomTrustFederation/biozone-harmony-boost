@@ -26,6 +26,13 @@ export interface PullRequest {
   };
 }
 
+export interface Contributor {
+  id: number;
+  login: string;
+  avatar_url: string;
+  contributions: number;
+}
+
 export interface Issue {
   id: number;
   number: number;
@@ -37,6 +44,14 @@ export interface Issue {
     login: string;
     avatar_url: string;
   };
+}
+
+export interface Release {
+  id: number;
+  name: string | null;
+  tag_name: string;
+  html_url: string;
+  published_at: string | null;
 }
 
 class GitHubApi {
@@ -58,7 +73,7 @@ class GitHubApi {
   }
   
   // Get repository contributors
-  async getContributors(owner: string, repo: string): Promise<any[]> {
+  async getContributors(owner: string, repo: string): Promise<Contributor[]> {
     const response = await this.apiClient.client.get(`/repos/${owner}/${repo}/contributors`);
     return response.data;
   }
@@ -80,7 +95,7 @@ class GitHubApi {
   }
   
   // Get repository releases
-  async getReleases(owner: string, repo: string): Promise<any[]> {
+  async getReleases(owner: string, repo: string): Promise<Release[]> {
     const response = await this.apiClient.client.get(`/repos/${owner}/${repo}/releases`);
     return response.data;
   }

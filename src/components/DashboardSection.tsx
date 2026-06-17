@@ -7,7 +7,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 import { Target, Sprout, Users, Clock } from 'lucide-react';
 import { Link } from "react-router-dom";
 
-const presaleData = [
+const scenarioData = [
   { name: 'Stage 1', target: 1000000, price: 0.0425 },
   { name: 'Stage 2', target: 2500000, price: 0.0486 },
   { name: 'Stage 3', target: 5000000, price: 0.0512 },
@@ -29,10 +29,10 @@ const DashboardSection = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            <span className="gradient-text">Presale</span> Goals
+            <span className="gradient-text">Stewardship</span> Scenarios
           </h2>
           <p className="text-muted-foreground">
-            Join our mission to protect critical ecological zones through our presale initiative.
+            Review illustrative stewardship scenarios for the incubating Aether Coin concept.
           </p>
         </div>
         
@@ -40,8 +40,8 @@ const DashboardSection = () => {
           <Card className="lg:col-span-2 border-forest-100">
             <CardHeader className="flex flex-row items-start justify-between">
               <div>
-                <CardTitle>Presale Price Roadmap</CardTitle>
-                <CardDescription>Target price progression through presale stages</CardDescription>
+                <CardTitle>Concept Price Scenarios</CardTitle>
+                <CardDescription>Concept-stage modeling across hypothetical release phases</CardDescription>
               </div>
               <Badge variant="outline" className="bg-forest-50 text-forest-700 border-forest-200">
                 <Clock className="h-3.5 w-3.5 mr-1" />
@@ -51,7 +51,7 @@ const DashboardSection = () => {
             <CardContent>
               <div className="h-[300px] w-full">
                 <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={presaleData}>
+                  <LineChart data={scenarioData}>
                     <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
                     <XAxis dataKey="name" tick={{ fontSize: 12 }} />
                     <YAxis 
@@ -60,7 +60,7 @@ const DashboardSection = () => {
                       tick={{ fontSize: 12 }}
                     />
                     <Tooltip 
-                      formatter={(value) => [`$${value}`, 'Target Price']}
+                      formatter={(value) => [`$${value}`, 'Scenario Price']}
                       labelFormatter={(label) => `${label}`}
                     />
                     <Line 
@@ -77,18 +77,18 @@ const DashboardSection = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 mt-4 gap-4">
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Target className="h-5 w-5 text-forest-600 mb-1" />
-                  <span className="text-xs text-muted-foreground">Target Raise</span>
+                  <span className="text-xs text-muted-foreground">Scenario Goal</span>
                   <span className="font-bold text-forest-700">$15M</span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Sprout className="h-5 w-5 text-forest-600 mb-1" />
-                  <span className="text-xs text-muted-foreground">Token Supply</span>
+                  <span className="text-xs text-muted-foreground">Modeled Supply</span>
                   <span className="font-bold text-forest-700">200M <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link></span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Users className="h-5 w-5 text-forest-600 mb-1" />
-                  <span className="text-xs text-muted-foreground">Minimum Contribution</span>
-                  <span className="font-bold text-forest-700">$100</span>
+                  <span className="text-xs text-muted-foreground">Participation</span>
+                  <span className="font-bold text-forest-700">Research</span>
                 </div>
               </div>
             </CardContent>
@@ -97,7 +97,7 @@ const DashboardSection = () => {
           <Card className="border-forest-100">
             <CardHeader>
               <CardTitle>Biozoe Funding Goals</CardTitle>
-              <CardDescription>Planned allocation of presale funds</CardDescription>
+              <CardDescription>Illustrative allocation model for future review</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-8">
@@ -115,19 +115,19 @@ const DashboardSection = () => {
                 ))}
               </div>
               <div className="mt-8 p-4 bg-forest-50 rounded-lg">
-                <h4 className="text-sm font-semibold text-forest-700 mb-2">Presale Timeline</h4>
+                <h4 className="text-sm font-semibold text-forest-700 mb-2">Research Timeline</h4>
                 <div className="text-xs space-y-2">
                   <div className="flex justify-between">
-                    <span>Stage 1 Early Bird</span>
-                    <span className="font-medium">May 15, 2025</span>
+                    <span>Concept Review</span>
+                    <span className="font-medium">Incubating</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Public Presale End</span>
-                    <span className="font-medium">Aug 30, 2025</span>
+                    <span>Governance Review</span>
+                    <span className="font-medium">Planned</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Token Distribution</span>
-                    <span className="font-medium">Sep 15, 2025</span>
+                    <span>Technical Review</span>
+                    <span className="font-medium">Planned</span>
                   </div>
                 </div>
               </div>

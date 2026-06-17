@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# Biozone Harmony Boost
 
-## Project info
+Incubating Aether/Biozone front-end prototype for regenerative value, ecological stewardship, tokenomics modeling, and wallet-interface research.
 
-**URL**: https://lovable.dev/projects/52ed8425-9ff7-4d13-848b-7099e5f52a6b
+## Federation Status
 
-## How can I edit this code?
+| Field | Value |
+| --- | --- |
+| Status | Incubating live service |
+| Federation layer | Stewardship / Research |
+| Repository role | Live concept UI for Aether Coin Biozone stewardship and wallet research |
+| Visibility | Public |
+| Primary language | TypeScript / React / Vite |
 
-There are several ways of editing your application.
+## Purpose
 
-**Use Lovable**
+`biozone-harmony-boost` is a concept-stage interface for exploring regenerative value language, ecological stewardship dashboards, tokenomics assumptions, wallet UI flows, and API shapes connected to the larger AI Freedom Trust Federation ecosystem.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/52ed8425-9ff7-4d13-848b-7099e5f52a6b) and start prompting.
+This repository is a live public web service for the concept interface. It is not a live token sale, wallet custody service, investment product, audited blockchain system, or production API. It is a research prototype that can inform future work in `Aether_Coin_biozonecurrency`.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Current Capabilities
 
-**Use your preferred IDE**
+- Vite + React + TypeScript single-page application.
+- Tailwind/shadcn-style component system.
+- Aether Coin landing, tokenomics, wallet concept, API concept, DApp placeholder, privacy, and terms pages.
+- GitHub repository information section.
+- Production build through Vite.
+- Public-claims language now labels token, wallet, API, and network content as concept-stage research.
+- GitHub Pages deployment workflow.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The local development server uses Vite.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Verification
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+npm run lint
+npm audit --audit-level=moderate
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+For the GitHub Pages build path:
 
-## What technologies are used for this project?
+```bash
+$env:GITHUB_PAGES="true"; npm run build
+```
 
-This project is built with .
+Current cleanup status:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Dependency audit has been cleaned to zero known vulnerabilities at the time of this pass.
+- The previous unresolved `earth-pattern.png` build warning has been removed.
+- Lovable-only development tagging was removed from the Vite config.
 
-## How can I deploy this project?
+## Roadmap
 
-Simply open [Lovable](https://lovable.dev/projects/52ed8425-9ff7-4d13-848b-7099e5f52a6b) and click on Share -> Publish.
+1. Keep the live GitHub Pages deployment healthy.
+2. Decide whether this remains a standalone incubating service or whether useful pieces should merge into `Aether_Coin_biozonecurrency`.
+3. Replace placeholder/social links with real federation links or remove them.
+4. Add tests if the app remains active.
+5. Review UI for accessibility and mobile layout before any broader public promotion.
 
-## Can I connect a custom domain to my Lovable project?
+## Public Claims Note
 
-Yes it is!
+This repository must not imply:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- a live presale
+- investment opportunity
+- guaranteed rewards
+- audited wallet safety
+- production custody
+- production API availability
+- proven decentralized network
+- verified environmental impact
+- security guarantees
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+State what exists, what is concept-stage, and what still requires legal, security, technical, and governance review.
+
+## Related Repositories
+
+- [`Aether_Coin_biozonecurrency`](https://github.com/AIFreedomTrustFederation/Aether_Coin_biozonecurrency)
+- [`www.aifreedomtrust.com`](https://github.com/AIFreedomTrustFederation/www.aifreedomtrust.com)
+- [`AIFT-Forge`](https://github.com/AIFreedomTrustFederation/AIFT-Forge)

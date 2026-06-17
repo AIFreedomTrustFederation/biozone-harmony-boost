@@ -21,8 +21,7 @@ const WalletSection = () => {
             <span className="gradient-text">Aether Wallet</span> Interface
           </h2>
           <p className="text-muted-foreground">
-            Manage your <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coins</Link> with our 
-            intuitive wallet interface. Secure, transparent, and designed for ecosystem participation.
+            Explore a concept wallet interface for <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Coin</Link>. This prototype does not provide custody, transaction signing, or production wallet security.
           </p>
         </div>
         
@@ -144,7 +143,7 @@ const WalletSection = () => {
                           <span className="text-sm bg-forest-100 px-2 py-0.5 rounded text-forest-700">8.2% APY</span>
                         </div>
                         <p className="text-sm text-muted-foreground mb-3">
-                          Stake your tokens to support ecosystem development and earn rewards.
+                          Model how staking-like commitments could support ecosystem development.
                         </p>
                         <Button size="sm" className="bg-forest-600 hover:bg-forest-700">
                           Stake Now
@@ -157,7 +156,7 @@ const WalletSection = () => {
                           <span className="text-sm bg-forest-100 px-2 py-0.5 rounded text-forest-700">10.5% APY</span>
                         </div>
                         <p className="text-sm text-muted-foreground mb-3">
-                          Higher rewards for supporting direct conservation efforts.
+                          Research stronger recognition for supporting direct conservation efforts.
                         </p>
                         <Button size="sm" className="bg-forest-600 hover:bg-forest-700">
                           Stake Now

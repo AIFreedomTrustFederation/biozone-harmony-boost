@@ -40,7 +40,7 @@ const tokenUtility = [
   },
   {
     title: "Carbon Credits",
-    description: "Convert carbon offset actions into token rewards",
+    description: "Model how carbon-offset evidence could be acknowledged without implying live rewards",
     icon: <Recycle className="h-8 w-8 text-forest-600" />
   }
 ];
@@ -54,8 +54,7 @@ const TokenomicsSection = () => {
             <span className="gradient-text"><Link to="/tokenomics" className="hover:opacity-90">ATC</Link></span> Tokenomics
           </h2>
           <p className="text-muted-foreground">
-            Understanding the economics and distribution of <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Token Coin (ATC)</Link>, 
-            the foundation of our biozoecurrency - the inverse of traditional eco-cryptocurrencies.
+            Exploring the economics and distribution assumptions for <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Token Coin (ATC)</Link> as an incubating regenerative value concept.
           </p>
         </div>
         
@@ -160,10 +159,9 @@ const TokenomicsSection = () => {
         <div className="text-center max-w-3xl mx-auto">
           <div className="p-6 bg-forest-50 rounded-lg">
             <Wallet className="h-10 w-10 text-forest-600 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Join the <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> Presale</h3>
+            <h3 className="text-xl font-semibold mb-2">Review the <Link to="/tokenomics" className="text-forest-600 hover:underline">ATC</Link> Concept</h3>
             <p className="text-muted-foreground mb-4">
-              Be among the first to acquire <Link to="/tokenomics" className="text-forest-600 hover:underline">Aether Token Coin (ATC)</Link> and participate in our 
-              mission to protect critical ecosystems worldwide.
+              This prototype documents concept-stage assumptions only. It is not a live token sale, investment offer, or wallet custody service.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button className="bg-forest-600 hover:bg-forest-700">

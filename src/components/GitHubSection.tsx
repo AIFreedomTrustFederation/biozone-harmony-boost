@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useRepository, useContributors, usePullRequests } from "@/hooks/useGitHub";
 import { Loader2, Star, GitFork, AlertCircle, Users } from "lucide-react";
+import type { Contributor, PullRequest } from "@/services/api/githubApi";
 
 const GitHubSection = () => {
   const [repoDetails, setRepoDetails] = useState({
@@ -138,7 +139,7 @@ const GitHubSection = () => {
                       </div>
                     ) : contributors && contributors.length > 0 ? (
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                        {contributors.slice(0, 6).map((contributor: any) => (
+                        {contributors.slice(0, 6).map((contributor: Contributor) => (
                           <div key={contributor.id} className="flex items-center gap-3 p-3 border rounded-lg">
                             <img 
                               src={contributor.avatar_url} 
@@ -174,7 +175,7 @@ const GitHubSection = () => {
                       </div>
                     ) : pullRequests && pullRequests.length > 0 ? (
                       <div className="space-y-4">
-                        {pullRequests.slice(0, 5).map((pr: any) => (
+                        {pullRequests.slice(0, 5).map((pr: PullRequest) => (
                           <a 
                             href={pr.html_url} 
                             target="_blank" 

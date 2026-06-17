@@ -25,6 +25,13 @@ export interface WalletInfo {
   stakingRewards?: number;
 }
 
+export interface StakingInfo {
+  walletAddress: string;
+  stakedAmount: number;
+  rewards: number;
+  status: 'active' | 'inactive' | 'pending';
+}
+
 class FractalCoinApi {
   private apiClient: ApiClient;
   
@@ -68,7 +75,7 @@ class FractalCoinApi {
   }
   
   // Get staking information
-  async getStakingInfo(walletAddress: string): Promise<any> {
+  async getStakingInfo(walletAddress: string): Promise<StakingInfo> {
     const response = await this.apiClient.client.get(`/staking/${walletAddress}`);
     return response.data;
   }

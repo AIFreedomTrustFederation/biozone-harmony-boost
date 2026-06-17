@@ -17,22 +17,22 @@ const aiDistribution = [
 const useCases = [
   {
     title: "LLM Training",
-    description: "Earn rewards for contributing processing power to train our large language models",
+    description: "Explore how contributed compute could be tracked in a future governed network",
     icon: <Brain className="h-8 w-8 text-purple-600" />
   },
   {
     title: "AI Compute Resources",
-    description: "Allocate GPU/CPU resources to the network and receive token rewards",
+    description: "Model how GPU/CPU resources might be measured before any reward system exists",
     icon: <Cpu className="h-8 w-8 text-purple-600" />
   },
   {
     title: "Model Validation",
-    description: "Participate in the validation of new model versions and earn tokens",
+    description: "Research human-reviewed validation flows for future model releases",
     icon: <BrainCircuit className="h-8 w-8 text-purple-600" />
   },
   {
     title: "Data Curation",
-    description: "Help curate high-quality training data and receive rewards",
+    description: "Prototype consent-first data curation and quality review workflows",
     icon: <Database className="h-8 w-8 text-purple-600" />
   }
 ];
@@ -46,8 +46,7 @@ const AiCoinSection = () => {
             <span className="text-purple-600">AICoin</span> (ICON)
           </h2>
           <p className="text-muted-foreground">
-            The utility token powering our decentralized AI training network. Earn ICON by contributing 
-            GPU/CPU resources for training our advanced machine learning models.
+            A research token concept for a future governed AI training network. This prototype models how compute, validation, and data stewardship could be represented before any production reward system exists.
           </p>
         </div>
         
@@ -149,7 +148,7 @@ const AiCoinSection = () => {
                       Daily
                     </span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Rewards distributed daily based on contribution metrics</p>
+                  <p className="text-sm text-muted-foreground">Concept metrics shown for research modeling only</p>
                 </div>
               </div>
             </CardContent>
@@ -186,7 +185,7 @@ const AiCoinSection = () => {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  Set up your hardware to participate in training our AI models and earn ICON tokens.
+                  Review how a future hardware contribution flow could work before any production network or token reward is active.
                   Follow our simple setup guide to get started.
                 </p>
                 <div className="grid grid-cols-1 gap-2 mt-4">
@@ -212,10 +211,10 @@ const AiCoinSection = () => {
             <CardContent>
               <div className="space-y-4">
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-purple-700">ICON (AICoin)</span> rewards users for contributing processing power (CPU/GPU) for training our AI models.
+                  <span className="font-medium text-purple-700">ICON (AICoin)</span> models how processing-power contributions could be represented in a governed research network.
                 </p>
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-medium text-forest-600">FTC (Aether Coin)</span> rewards users for allocating data storage to our decentralized network infrastructure.
+                  <span className="font-medium text-forest-600">FTC (Aether Coin)</span> models how storage stewardship could be tracked in future decentralized infrastructure.
                 </p>
                 <div className="grid grid-cols-1 gap-2 mt-4">
                   <Button variant="outline" className="border-purple-200 text-purple-700 w-full" asChild>

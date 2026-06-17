@@ -16,28 +16,25 @@ const PrivacyPolicy = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-forest-700 mb-4">1. Introduction</h2>
             <p className="text-gray-700 mb-4">
-              This Privacy Policy outlines how Aether Coin ("we", "our", or "us") collects, uses, and protects 
-              your information when you use our services, website, and platform. We are committed to protecting 
-              your privacy and handling your data with transparency and security.
+              This Privacy Policy describes the intended privacy posture for this Aether Coin concept prototype. 
+              It should be reviewed before any production service, wallet, API, or data-processing workflow is launched.
             </p>
           </section>
           
           <section className="mb-10">
-            <h2 className="text-2xl font-semibold text-forest-700 mb-4">2. FractalCoin Node Network and LLM Training</h2>
+            <h2 className="text-2xl font-semibold text-forest-700 mb-4">2. FractalCoin Node Network Research</h2>
             <p className="text-gray-700 mb-4">
-              Aether Coin utilizes a proprietary encrypted FractalCoin node network system for training and 
-              deploying Large Language Models (LLMs). This innovative approach ensures:
+              Aether Coin explores a future FractalCoin node network model for AI and stewardship workflows. 
+              The current repository is a prototype and does not prove a live encrypted production network.
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-              <li>Your data remains encrypted throughout the entire training and inference process</li>
-              <li>Processing is distributed across our secure decentralized network</li>
-              <li>No single node has access to your complete data at any time</li>
-              <li>Federated learning techniques that improve model quality while preserving privacy</li>
-              <li>Zero-knowledge proofs for validating training without exposing data</li>
+              <li>Future data processing should be consent-based and minimized</li>
+              <li>Any distributed processing model must be documented and independently reviewed</li>
+              <li>No production privacy or encryption guarantee is made by this prototype</li>
+              <li>Federated learning and zero-knowledge ideas remain research directions unless implemented and audited</li>
             </ul>
             <p className="text-gray-700 mb-4">
-              By leveraging blockchain technology through our FractalCoin network, we've created a system where 
-              AI training can occur without compromising user privacy or data security.
+              Future claims about blockchain, AI training, privacy, or data security must be backed by implementation evidence and review.
             </p>
           </section>
           
@@ -49,7 +46,7 @@ const PrivacyPolicy = () => {
             <h3 className="text-lg font-medium text-forest-600 mt-4 mb-2">3.1 Personal Information</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
               <li>Basic account details: name, email address, wallet address</li>
-              <li>Transaction data necessary for processing on the FractalCoin network</li>
+              <li>Modeled transaction or stewardship data if future prototypes enable those workflows</li>
               <li>Profile information you choose to provide</li>
             </ul>
             <h3 className="text-lg font-medium text-forest-600 mt-4 mb-2">3.2 Usage Information</h3>
@@ -61,7 +58,7 @@ const PrivacyPolicy = () => {
             <h3 className="text-lg font-medium text-forest-600 mt-4 mb-2">3.3 AI Training Data</h3>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
               <li>Queries and responses when using our AI-powered features</li>
-              <li>Content processed through our services (always encrypted)</li>
+              <li>Content processed through future services, subject to documented consent and protection controls</li>
               <li>Feedback provided on AI model outputs</li>
             </ul>
           </section>
@@ -73,8 +70,8 @@ const PrivacyPolicy = () => {
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
               <li>Providing, maintaining, and improving our services</li>
-              <li>Processing transactions on the FractalCoin network</li>
-              <li>Training our AI models through our encrypted node network</li>
+              <li>Testing modeled transaction or stewardship workflows</li>
+              <li>Researching AI-assisted review workflows where explicitly enabled</li>
               <li>Enhancing security and preventing fraud</li>
               <li>Personalizing your experience</li>
               <li>Communicating with you about services, updates, and promotions</li>
@@ -84,18 +81,17 @@ const PrivacyPolicy = () => {
           <section className="mb-10">
             <h2 className="text-2xl font-semibold text-forest-700 mb-4">5. Data Security and Encryption</h2>
             <p className="text-gray-700 mb-4">
-              We implement industry-leading security measures to protect your data:
+              Any production deployment should implement documented security measures such as:
             </p>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-4">
-              <li>End-to-end encryption for all data processed through our network</li>
-              <li>Blockchain-based immutable audit logs of all data access</li>
-              <li>Decentralized storage with sharded encryption keys</li>
-              <li>Multi-layered security protocols that meet or exceed industry standards</li>
-              <li>Regular security audits and penetration testing</li>
+              <li>Encryption appropriate to the data and threat model</li>
+              <li>Audit logs for sensitive access paths</li>
+              <li>Documented storage and key-management boundaries</li>
+              <li>Security reviews before public wallet, API, or custody claims</li>
+              <li>Dependency and deployment audits</li>
             </ul>
             <p className="text-gray-700 mb-4">
-              Our FractalCoin node architecture ensures that even in the unlikely event of a breach, 
-              attackers cannot access meaningful or complete data.
+              This prototype does not guarantee breach resistance or production data protection.
             </p>
           </section>
           

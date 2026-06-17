@@ -30,7 +30,7 @@ const ApiPage = () => {
       return;
     }
     
-    toast.success("API key request submitted. Check your email soon.");
+    toast.success("Research access interest recorded locally for this prototype.");
     setEmail("");
   };
 
@@ -45,7 +45,7 @@ const ApiPage = () => {
               Aether Coin API Integration
             </h1>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Connect to our secure FractalCoin node network with LLM training capabilities through our comprehensive API suite.
+              Review concept API shapes for a future FractalCoin node network. These examples are documentation prototypes, not live production endpoints.
             </p>
           </div>
           
@@ -65,7 +65,7 @@ const ApiPage = () => {
                     API Overview
                   </CardTitle>
                   <CardDescription>
-                    Our API provides secure access to the FractalCoin node network for LLM training and inference.
+                    These API examples describe possible future access patterns for wallet, stewardship, and model-workflow research.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -79,11 +79,11 @@ const ApiPage = () => {
                   <div className="space-y-4">
                     <h3 className="text-lg font-medium">Core Features</h3>
                     <ul className="space-y-2 list-disc pl-6">
-                      <li>Secure access to FractalCoin node network</li>
-                      <li>Distributed LLM training across encrypted nodes</li>
-                      <li>Real-time transaction processing</li>
-                      <li>Wallet management and staking</li>
-                      <li>Smart contract integration</li>
+                      <li>Concept access patterns for a future FractalCoin node network</li>
+                      <li>Research flows for distributed model-work coordination</li>
+                      <li>Prototype transaction and stewardship record shapes</li>
+                      <li>Wallet-interface and commitment-model examples</li>
+                      <li>Smart-contract interaction concepts requiring future review</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -99,7 +99,7 @@ const ApiPage = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      Our distributed node network provides secure and encrypted processing for LLM training and transactions.
+                      This section models future node-network metrics. It does not represent a live production network.
                     </p>
                     <div className="text-sm">
                       <div className="flex justify-between mb-1">
@@ -165,9 +165,9 @@ const ApiPage = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h3 className="text-lg font-medium mb-2">API Key</h3>
+                    <h3 className="text-lg font-medium mb-2">API Key Concept</h3>
                     <p className="text-muted-foreground mb-4">
-                      All requests to the Aether Coin API require an API key that should be included in the request headers.
+                      Production API access is not active in this prototype. The header below shows the intended shape for future authenticated requests.
                     </p>
                     <div className="bg-muted p-3 rounded-md font-mono text-sm">
                       Authorization: Bearer YOUR_API_KEY
@@ -178,7 +178,7 @@ const ApiPage = () => {
                     <h3 className="text-lg font-medium">Get Your API Key</h3>
                     <form onSubmit={handleRequestApiKey} className="grid gap-4">
                       <Input 
-                        placeholder="Enter your email to receive an API key" 
+                        placeholder="Enter your email for research updates" 
                         type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
@@ -237,7 +237,7 @@ const ApiPage = () => {
                     API Endpoints
                   </CardTitle>
                   <CardDescription>
-                    Available endpoints for interacting with the FractalCoin network
+                    Proposed endpoints for future FractalCoin network review
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -259,7 +259,7 @@ const ApiPage = () => {
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/wallet/{'{address}'}</td>
                           <td className="py-3 px-4">GET</td>
-                          <td className="py-3 px-4">Get wallet information including balance and staking rewards</td>
+                          <td className="py-3 px-4">Get concept wallet information including modeled balances and commitments</td>
                         </tr>
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/transactions/{'{address}'}</td>
@@ -274,7 +274,7 @@ const ApiPage = () => {
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/staking/{'{address}'}</td>
                           <td className="py-3 px-4">GET</td>
-                          <td className="py-3 px-4">Get staking information for a wallet</td>
+                          <td className="py-3 px-4">Get modeled commitment information for a wallet</td>
                         </tr>
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/llm/train</td>
@@ -434,7 +434,7 @@ const trainModel = async () => {
           <div className="text-center space-y-4 max-w-2xl mx-auto">
             <h2 className="text-2xl font-bold text-forest-800">Ready to Get Started?</h2>
             <p className="text-muted-foreground">
-              Join our developer community and start building on the FractalCoin node network today.
+              Join the developer research list and help validate the FractalCoin network concept before any production service is offered.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
               <Button 
