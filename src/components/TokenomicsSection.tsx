@@ -46,6 +46,8 @@ const circleUtility = [
 ];
 
 const TokenomicsSection = () => {
+  const flightPaperUrl = "https://aifreedomtrustfederation.github.io/AI-Freedom-Trust/docs/aetherion-flight-paper-post-quantum-sovereign-network.md";
+
   return (
     <section className="py-16 md:py-24">
       <div className="container">
@@ -167,8 +169,10 @@ const TokenomicsSection = () => {
               <Button className="bg-forest-600 hover:bg-forest-700">
                 Join Research List
               </Button>
-              <Button variant="outline" className="border-forest-300 text-forest-700">
+              <Button variant="outline" className="border-forest-300 text-forest-700" asChild>
+                <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer">
                 Download Whitepaper
+                </a>
               </Button>
             </div>
           </div>

@@ -4,6 +4,8 @@ import { Leaf, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const flightPaperUrl = "https://aifreedomtrustfederation.github.io/AI-Freedom-Trust/docs/aetherion-flight-paper-post-quantum-sovereign-network.md";
+
   return (
     <footer className="bg-forest-800 text-white py-12">
       <div className="container">
@@ -25,6 +27,11 @@ const Footer = () => {
               <li><a href="#" className="hover:text-white">Ecosystem</a></li>
               <li><a href="#" className="hover:text-white">Team</a></li>
               <li><Link to="/tokenomics" className="hover:text-white">Circleunchain Model</Link></li>
+              <li>
+                <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center">
+                  Aetherion Flight Paper <ExternalLink className="ml-1 h-3 w-3" />
+                </a>
+              </li>
             </ul>
           </div>
           
@@ -32,6 +39,11 @@ const Footer = () => {
             <h3 className="text-lg font-medium mb-4">Resources</h3>
             <ul className="space-y-2 text-forest-200/80 text-sm">
               <li><a href="#" className="hover:text-white">Documentation</a></li>
+              <li>
+                <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center">
+                  White Paper <ExternalLink className="ml-1 h-3 w-3" />
+                </a>
+              </li>
               <li><a href="#" className="hover:text-white">FAQs</a></li>
               <li><a href="#" className="hover:text-white">Community</a></li>
               <li><a href="#" className="hover:text-white">Blog</a></li>

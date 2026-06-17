@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+  const flightPaperUrl = "https://aifreedomtrustfederation.github.io/AI-Freedom-Trust/docs/aetherion-flight-paper-post-quantum-sovereign-network.md";
+
   return (
     <section className="relative overflow-hidden py-20 md:py-28">
       <div className="absolute inset-0 bio-pattern opacity-40" />
@@ -26,6 +28,9 @@ const HeroSection = () => {
               </Button>
               <Button variant="outline" size="lg" className="border-forest-300 text-forest-700" asChild>
                 <Link to="/tokenomics">View Circleunchain Model</Link>
+              </Button>
+              <Button variant="outline" size="lg" className="border-forest-300 text-forest-700" asChild>
+                <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer">Read Flight Paper</a>
               </Button>
             </div>
             

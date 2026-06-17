@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { toast } from "sonner";
 
 const Navbar = () => {
+  const flightPaperUrl = "https://aifreedomtrustfederation.github.io/AI-Freedom-Trust/docs/aetherion-flight-paper-post-quantum-sovereign-network.md";
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center">
@@ -101,6 +103,16 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
+                <Button variant="link" asChild>
+                  <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Flight Paper
+                  </a>
+                </Button>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
                 <Button 
                   variant="link"
                   onClick={() => {
@@ -144,11 +156,9 @@ const Navbar = () => {
           <Button 
             size="sm" 
             className="bg-forest-600 hover:bg-forest-700"
-            onClick={() => {
-              toast.info("Participation flow coming soon");
-            }}
+            asChild
           >
-            Join Circle
+            <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer">Read Paper</a>
           </Button>
         </div>
       </div>
