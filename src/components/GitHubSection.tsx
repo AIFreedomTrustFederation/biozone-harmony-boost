@@ -10,8 +10,8 @@ import type { Contributor, PullRequest } from "@/services/api/githubApi";
 
 const GitHubSection = () => {
   const [repoDetails, setRepoDetails] = useState({
-    owner: "fractalcoin", // Default value, change as needed
-    repo: "aether-coin"   // Default value, change as needed
+    owner: "AIFreedomTrustFederation",
+    repo: "Aether_Coin_biozonecurrency"
   });
   const [inputValues, setInputValues] = useState(repoDetails);
   
