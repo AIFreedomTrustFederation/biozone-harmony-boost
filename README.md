@@ -26,7 +26,7 @@ This repository is a live public web service for the concept interface. Biozoe C
 - GitHub repository information section.
 - Production build through Vite.
 - Public-claims language now labels value, participation, API, and network content as concept-stage research.
-- GitHub Pages deployment workflow with a single-page app fallback for direct internal route refreshes.
+- GitHub Pages deployment workflow with route files and a single-page app fallback for direct internal route refreshes.
 
 ## Setup
 
