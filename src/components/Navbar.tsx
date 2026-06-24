@@ -1,24 +1,24 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { Leaf, Circle, ExternalLink } from "lucide-react";
+import { Leaf, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
-import { toast } from "sonner";
 
 const Navbar = () => {
   const flightPaperUrl = "https://aifreedomtrustfederation.github.io/AI-Freedom-Trust/docs/aetherion-flight-paper-post-quantum-sovereign-network.md";
+  const federationRootUrl = "https://aifreedomtrustfederation.github.io/";
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center">
-        <div className="flex items-center gap-2 mr-8">
+      <div className="container flex min-h-16 items-center gap-4 py-2">
+        <div className="mr-4 flex shrink-0 items-center gap-2">
           <Link to="/" className="flex items-center gap-2">
             <Leaf className="h-6 w-6 text-forest-600" />
             <span className="text-xl font-display font-semibold text-forest-800">Circleunchain</span>
           </Link>
         </div>
         
-        <NavigationMenu className="hidden md:flex">
+        <NavigationMenu className="hidden lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
@@ -30,7 +30,7 @@ const Navbar = () => {
             <NavigationMenuItem>
               <NavigationMenuTrigger>Ecosystem</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-2">
+                <div className="grid gap-3 p-4 md:w-[520px] lg:w-[640px] lg:grid-cols-2">
                   <NavigationMenuLink asChild>
                     <Link to="/tokenomics" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
                       <div className="text-sm font-medium leading-none">Biozoe Coins</div>
@@ -47,49 +47,39 @@ const Navbar = () => {
                       </p>
                     </Link>
                   </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/wallet" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">Participation Concept</div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Internal wallet concept route with no custody or live balances
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/dapp" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">Interface Concept</div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Internal route for future Circleunchain interface design
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link to="/api" className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground">
+                      <div className="text-sm font-medium leading-none">API Research</div>
+                      <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                        Research-oriented API shapes, not a deployed production API
+                      </p>
+                    </Link>
+                  </NavigationMenuLink>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Button variant="link" asChild>
-                  <Link to="/tokenomics">Circleunchain</Link>
-                </Button>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Button variant="link" asChild>
-                  <Link to="/aicon">AICoin</Link>
-                </Button>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Button variant="link" asChild>
-                  <Link to="/wallet">
-                    <Circle className="mr-2 h-4 w-4" />
-                    Participation
-                  </Link>
-                </Button>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Button variant="link" asChild>
-                  <Link to="/dapp" className="flex items-center">
+                  <a href={federationRootUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
                     <ExternalLink className="mr-2 h-4 w-4" />
-                    DApp
-                  </Link>
-                </Button>
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuLink asChild>
-                <Button variant="link" asChild>
-                  <a href="https://atc.aifreedomtrust.com/dapp" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                    <ExternalLink className="mr-2 h-4 w-4" />
-                    DApp (External)
+                    Federation
                   </a>
                 </Button>
               </NavigationMenuLink>
@@ -113,13 +103,11 @@ const Navbar = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <Button 
-                  variant="link"
-                  onClick={() => {
-                    toast.info("About page coming soon");
-                  }}
-                >
-                  About
+                <Button variant="link" asChild>
+                  <a href="https://github.com/AIFreedomTrustFederation/biozone-harmony-boost" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                    <ExternalLink className="mr-2 h-4 w-4" />
+                    Source
+                  </a>
                 </Button>
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -143,22 +131,19 @@ const Navbar = () => {
           </NavigationMenuList>
         </NavigationMenu>
         
-        <div className="ml-auto flex items-center gap-2">
-          <Button 
-            variant="ghost" 
-            size="sm"
-            onClick={() => {
-              toast.info("Sign in functionality coming soon");
-            }}
-          >
-            Sign In
+        <div className="ml-auto flex shrink-0 items-center gap-2">
+          <Button variant="ghost" size="sm" className="hidden sm:inline-flex" asChild>
+            <a href={federationRootUrl} target="_blank" rel="noopener noreferrer">Federation Root</a>
           </Button>
           <Button 
             size="sm" 
             className="bg-forest-600 hover:bg-forest-700"
             asChild
           >
-            <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer">Read Paper</a>
+            <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer">
+              <span className="hidden sm:inline">Read Paper</span>
+              <span className="sm:hidden">Paper</span>
+            </a>
           </Button>
         </div>
       </div>

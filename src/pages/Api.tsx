@@ -4,34 +4,19 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Code, Database, Link as LinkIcon, Server, Settings } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { toast } from "sonner";
 
 const ApiPage = () => {
-  const [apiKey, setApiKey] = useState("");
   const [copied, setCopied] = useState(false);
-  const [email, setEmail] = useState("");
 
   const copyCode = (code: string) => {
     navigator.clipboard.writeText(code);
     setCopied(true);
     toast.success("Code copied to clipboard");
     setTimeout(() => setCopied(false), 2000);
-  };
-
-  const handleRequestApiKey = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) {
-      toast.error("Please enter your email address");
-      return;
-    }
-    
-    toast.success("Research access interest recorded locally for this prototype.");
-    setEmail("");
   };
 
   return (
@@ -70,7 +55,7 @@ const ApiPage = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h3 className="text-lg font-medium mb-2">Base URL</h3>
+                    <h3 className="text-lg font-medium mb-2">Proposed base path</h3>
                     <div className="bg-muted p-3 rounded-md font-mono text-sm">
                       https://api.aifreedomtrust.com/v1
                     </div>
@@ -101,18 +86,18 @@ const ApiPage = () => {
                     <p className="text-muted-foreground mb-4">
                       This section models future node-network metrics. It does not represent a live production network.
                     </p>
-                    <div className="text-sm">
-                      <div className="flex justify-between mb-1">
-                        <span>Network Uptime</span>
-                        <span className="font-medium">99.98%</span>
+                    <div className="grid gap-2 text-sm">
+                      <div className="flex justify-between gap-4">
+                        <span>Network uptime</span>
+                        <span className="font-medium text-forest-700">Not live</span>
                       </div>
-                      <div className="flex justify-between mb-1">
-                        <span>Active Nodes</span>
-                        <span className="font-medium">1,243</span>
+                      <div className="flex justify-between gap-4">
+                        <span>Active nodes</span>
+                        <span className="font-medium text-forest-700">Not deployed</span>
                       </div>
-                      <div className="flex justify-between">
-                        <span>Processing Capacity</span>
-                        <span className="font-medium">840 TFLOPS</span>
+                      <div className="flex justify-between gap-4">
+                        <span>Processing capacity</span>
+                        <span className="font-medium text-forest-700">Requires implementation evidence</span>
                       </div>
                     </div>
                   </CardContent>
@@ -127,24 +112,24 @@ const ApiPage = () => {
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground mb-4">
-                      Multiple integration methods to suit your development needs.
+                      Candidate integration shapes that require future implementation and review.
                     </p>
                     <ul className="space-y-2 text-sm">
                       <li className="flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-forest-500"></span>
-                        REST API
+                        REST API concept
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-forest-500"></span>
-                        GraphQL Endpoint
+                        GraphQL endpoint concept
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-forest-500"></span>
-                        WebSocket Streams
+                        Event-stream concept
                       </li>
                       <li className="flex items-center gap-2">
                         <span className="h-2 w-2 rounded-full bg-forest-500"></span>
-                        SDK Libraries
+                        SDK interface concept
                       </li>
                     </ul>
                   </CardContent>
@@ -160,7 +145,7 @@ const ApiPage = () => {
                     API Authentication
                   </CardTitle>
                   <CardDescription>
-                    Secure your API requests with authentication tokens
+                    Future authenticated requests require implementation and review
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
@@ -175,18 +160,14 @@ const ApiPage = () => {
                   </div>
                   
                   <div className="space-y-2">
-                    <h3 className="text-lg font-medium">Get Your API Key</h3>
-                    <form onSubmit={handleRequestApiKey} className="grid gap-4">
-                      <Input 
-                        placeholder="Enter your email for research updates" 
-                        type="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                      />
-                      <Button type="submit" className="bg-forest-600 hover:bg-forest-700">
-                        Request API Key
-                      </Button>
-                    </form>
+                    <h3 className="text-lg font-medium">API access status</h3>
+                    <p className="text-muted-foreground">
+                      API keys are not issued by this prototype. Use the public repositories
+                      to review the concept and track future implementation work.
+                    </p>
+                    <Button className="bg-forest-600 hover:bg-forest-700" asChild>
+                      <a href="https://github.com/AIFreedomTrustFederation/Aether_Coin_biozonecurrency" target="_blank" rel="noopener noreferrer">Review Protocol Repository</a>
+                    </Button>
                   </div>
                 </CardContent>
               </Card>
@@ -254,7 +235,7 @@ const ApiPage = () => {
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/coin/data</td>
                           <td className="py-3 px-4">GET</td>
-                          <td className="py-3 px-4">Get current coin data including price, market cap and volume</td>
+                          <td className="py-3 px-4">Concept route for future coin metadata after review</td>
                         </tr>
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/wallet/{'{address}'}</td>
@@ -264,12 +245,12 @@ const ApiPage = () => {
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/transactions/{'{address}'}</td>
                           <td className="py-3 px-4">GET</td>
-                          <td className="py-3 px-4">Get transaction history for a wallet</td>
+                          <td className="py-3 px-4">Review concept stewardship record history for a participant</td>
                         </tr>
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/transactions</td>
                           <td className="py-3 px-4">POST</td>
-                          <td className="py-3 px-4">Send a transaction</td>
+                          <td className="py-3 px-4">Concept route for submitting future stewardship records</td>
                         </tr>
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/staking/{'{address}'}</td>
@@ -279,17 +260,17 @@ const ApiPage = () => {
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/llm/train</td>
                           <td className="py-3 px-4">POST</td>
-                          <td className="py-3 px-4">Submit a training job to the node network</td>
+                          <td className="py-3 px-4">Concept route for future model-work coordination</td>
                         </tr>
                         <tr className="border-b">
                           <td className="py-3 px-4 font-mono text-sm">/v1/llm/inference</td>
                           <td className="py-3 px-4">POST</td>
-                          <td className="py-3 px-4">Run inference on trained models</td>
+                          <td className="py-3 px-4">Concept route for future reviewed inference workflows</td>
                         </tr>
                         <tr>
                           <td className="py-3 px-4 font-mono text-sm">/v1/llm/models</td>
                           <td className="py-3 px-4">GET</td>
-                          <td className="py-3 px-4">List available trained models</td>
+                          <td className="py-3 px-4">Concept route for future reviewed model records</td>
                         </tr>
                       </tbody>
                     </table>
@@ -308,7 +289,7 @@ const ApiPage = () => {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h3 className="text-base font-medium mb-2">Get Wallet Balance</h3>
+                    <h3 className="text-base font-medium mb-2">Review Concept Wallet Record</h3>
                     <div className="bg-muted p-3 rounded-md font-mono text-sm overflow-x-auto">
                       <pre>{`const getWalletBalance = async (address) => {
   const response = await fetch(
@@ -322,7 +303,7 @@ const ApiPage = () => {
   return await response.json();
 };
 
-// Example usage
+// Design-sketch usage only
 getWalletBalance('0x123abc...')
   .then(data => console.log(data))
   .catch(error => console.error('Error:', error));`}</pre>
@@ -330,7 +311,7 @@ getWalletBalance('0x123abc...')
                   </div>
                   
                   <div>
-                    <h3 className="text-base font-medium mb-2">Submit LLM Training Job</h3>
+                    <h3 className="text-base font-medium mb-2">Review Model-Work Request Shape</h3>
                     <div className="bg-muted p-3 rounded-md font-mono text-sm overflow-x-auto">
                       <pre>{`const submitTrainingJob = async (trainingData, modelConfig) => {
   const response = await fetch(
@@ -341,12 +322,7 @@ getWalletBalance('0x123abc...')
         'Content-Type': 'application/json',
         'Authorization': 'Bearer YOUR_API_KEY'
       },
-      body: JSON.stringify({
-        trainingData,
-        modelConfig,
-        nodeCount: 5,  // Number of nodes to distribute training
-        encryptionLevel: 'high'
-      })
+      body: JSON.stringify({ trainingData, modelConfig })
     }
   );
   return await response.json();
@@ -360,71 +336,36 @@ getWalletBalance('0x123abc...')
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2">
                     <Database className="h-5 w-5 text-forest-600" />
-                    SDK Installation
+                    SDK Concept
                   </CardTitle>
+                  <CardDescription>
+                    No installable production SDK is published from this prototype.
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div>
-                    <h3 className="text-base font-medium mb-2">Install the AetherCoin SDK</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      <div>
-                        <p className="text-sm mb-1">npm</p>
-                        <div className="bg-muted p-3 rounded-md font-mono text-sm overflow-x-auto">
-                          npm install @aethercoin/sdk
-                        </div>
-                      </div>
-                      <div>
-                        <p className="text-sm mb-1">yarn</p>
-                        <div className="bg-muted p-3 rounded-md font-mono text-sm overflow-x-auto">
-                          yarn add @aethercoin/sdk
-                        </div>
-                      </div>
-                    </div>
+                    <h3 className="text-base font-medium mb-2">Future package boundary</h3>
+                    <p className="text-muted-foreground">
+                      A real SDK package should be linked only after a package repository,
+                      release artifact, version, and validation record exist.
+                    </p>
                   </div>
                   
                   <div>
-                    <h3 className="text-base font-medium mb-2">SDK Example Usage</h3>
+                    <h3 className="text-base font-medium mb-2">Concept client shape</h3>
                     <div className="bg-muted p-3 rounded-md font-mono text-sm overflow-x-auto">
-                      <pre>{`import { AetherCoinClient } from '@aethercoin/sdk';
-
-// Initialize client
-const client = new AetherCoinClient({
-  apiKey: 'YOUR_API_KEY',
-  environment: 'production' // or 'testnet'
-});
-
-// Get coin data
-const getCoinData = async () => {
-  const coinData = await client.getCoinData();
-  console.log('Current price:', coinData.price);
-  console.log('Market cap:', coinData.marketCap);
+                      <pre>{`type CircleunchainClient = {
+  reviewParticipant(address: string): Promise<ConceptParticipantRecord>;
+  listStewardshipRecords(address: string): Promise<ConceptStewardshipRecord[]>;
 };
 
-// Initialize LLM training
-const trainModel = async () => {
-  const jobId = await client.llm.startTraining({
-    modelName: 'custom-model-1',
-    datasetUrl: 'https://your-dataset-url.com',
-    parameters: {
-      epochs: 3,
-      learningRate: 0.001,
-      nodeDistribution: 'auto'
-    }
-  });
-  
-  console.log('Training job submitted:', jobId);
-};`}</pre>
+// This is a design sketch, not an installable SDK or live endpoint.`}</pre>
                     </div>
                   </div>
                 </CardContent>
                 <CardFooter className="border-t pt-4">
-                  <Button 
-                    onClick={() => {
-                      window.open("https://github.com/aethercoin/sdk-examples", "_blank");
-                      toast.success("Opening GitHub repository in new tab");
-                    }}
-                  >
-                    View More Examples on GitHub
+                  <Button asChild>
+                    <a href="https://github.com/AIFreedomTrustFederation/Aether_Coin_biozonecurrency" target="_blank" rel="noopener noreferrer">Review Protocol Repository</a>
                   </Button>
                 </CardFooter>
               </Card>
@@ -432,29 +373,24 @@ const trainModel = async () => {
           </Tabs>
           
           <div className="text-center space-y-4 max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-forest-800">Ready to Get Started?</h2>
+            <h2 className="text-2xl font-bold text-forest-800">Ready to Review the Concept?</h2>
             <p className="text-muted-foreground">
-              Join the developer research list and help validate the Circleunchain concept before any production service is offered.
+              Review the public protocol repository and concept model before any production service is offered.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2">
               <Button 
                 size="lg" 
                 className="bg-forest-600 hover:bg-forest-700"
-                onClick={() => {
-                  toast.success("API access request form will be available soon");
-                }}
+                asChild
               >
-                Request API Access
+                <a href="https://github.com/AIFreedomTrustFederation/Aether_Coin_biozonecurrency" target="_blank" rel="noopener noreferrer">Review Protocol Repository</a>
               </Button>
               <Button 
                 size="lg" 
                 variant="outline"
-                onClick={() => {
-                  window.open("https://docs.aethercoin.com", "_blank");
-                  toast.success("Opening documentation in new tab");
-                }}
+                asChild
               >
-                Read the Documentation
+                <Link to="/tokenomics">Read Concept Model</Link>
               </Button>
             </div>
           </div>

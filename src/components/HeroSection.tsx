@@ -1,7 +1,6 @@
 
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const HeroSection = () => {
@@ -23,8 +22,8 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-forest-600 hover:bg-forest-700 text-white" size="lg">
-                Get Started
+              <Button className="bg-forest-600 hover:bg-forest-700 text-white" size="lg" asChild>
+                <Link to="/tokenomics">Explore the Concept</Link>
               </Button>
               <Button variant="outline" size="lg" className="border-forest-300 text-forest-700" asChild>
                 <Link to="/tokenomics">View Circleunchain Model</Link>
@@ -34,20 +33,20 @@ const HeroSection = () => {
               </Button>
             </div>
             
-            <div className="flex items-center gap-8 pt-6">
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold text-forest-700">25+</span>
-                <span className="text-sm text-muted-foreground">Concept Zones</span>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-6">
+              <div className="rounded-lg border border-forest-100 bg-white/70 p-3">
+                <span className="block text-lg font-bold text-forest-700">Concept</span>
+                <span className="text-sm text-muted-foreground">Research stage</span>
               </div>
               
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold text-forest-700">10K+</span>
-                <span className="text-sm text-muted-foreground">Prototype Users</span>
+              <div className="rounded-lg border border-forest-100 bg-white/70 p-3">
+                <span className="block text-lg font-bold text-forest-700">No custody</span>
+                <span className="text-sm text-muted-foreground">No live wallet service</span>
               </div>
               
-              <div className="flex flex-col">
-                <span className="text-3xl font-bold text-forest-700">50K+</span>
-                <span className="text-sm text-muted-foreground">Circle Units</span>
+              <div className="rounded-lg border border-forest-100 bg-white/70 p-3">
+                <span className="block text-lg font-bold text-forest-700">Public source</span>
+                <span className="text-sm text-muted-foreground">Open repository</span>
               </div>
             </div>
           </div>

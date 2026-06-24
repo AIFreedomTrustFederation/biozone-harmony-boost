@@ -1,17 +1,16 @@
 
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { PieChart, Pie, Cell, ResponsiveContainer, Legend, Tooltip } from 'recharts';
 import { Circle, Leaf, Shield, Recycle, ChartPie, ChartBar, Sprout } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
-const circleDistribution = [
-  { name: 'Stewardship Pools', value: 40, color: '#4d994d' },
-  { name: 'Ecosystem Development', value: 25, color: '#2c7873' },
-  { name: 'Governance Review', value: 15, color: '#5c946e' },
-  { name: 'Education', value: 10, color: '#80c080' },
-  { name: 'Resilience Reserve', value: 10, color: '#6aaa96' }
+const conceptAreas = [
+  'Stewardship pools',
+  'Ecosystem development',
+  'Governance review',
+  'Education',
+  'Resilience reserve'
 ];
 
 const vesting = [
@@ -64,41 +63,26 @@ const TokenomicsSection = () => {
           <Card className="border-forest-100">
             <CardHeader>
               <div className="flex items-center justify-between">
-                <CardTitle>Circle Distribution</CardTitle>
+                <CardTitle>Concept Areas</CardTitle>
                 <ChartPie className="h-6 w-6 text-forest-600" />
               </div>
-              <CardDescription>Illustrative allocation model for biozoe coins after Circleunchain foundations exist</CardDescription>
+              <CardDescription>Research areas to review before any biozoe coin allocation model exists</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="h-[300px]">
-                <ResponsiveContainer width="100%" height="100%">
-                  <PieChart>
-                    <Pie
-                      data={circleDistribution}
-                      cx="50%"
-                      cy="50%"
-                      innerRadius={60}
-                      outerRadius={100}
-                      fill="#8884d8"
-                      paddingAngle={2}
-                      dataKey="value"
-                      label={({name, percent}) => `${name}: ${(percent * 100).toFixed(0)}%`}
-                    >
-                      {circleDistribution.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={entry.color} />
-                      ))}
-                    </Pie>
-                    <Legend verticalAlign="bottom" height={36} />
-                    <Tooltip formatter={(value) => [`${value}%`, 'Allocation']} />
-                  </PieChart>
-                </ResponsiveContainer>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {conceptAreas.map((area) => (
+                  <div key={area} className="flex items-center gap-3 bg-forest-50 p-3 rounded-lg">
+                    <Circle className="h-4 w-4 text-forest-600" />
+                    <span className="text-sm font-medium text-forest-800">{area}</span>
+                  </div>
+                ))}
               </div>
               
               <div className="grid grid-cols-2 sm:grid-cols-3 mt-6 gap-4">
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Circle className="h-5 w-5 text-forest-600 mb-1" />
-                  <span className="text-xs text-muted-foreground">Modeled Units</span>
-                  <span className="font-bold text-forest-700">200M Biozoe</span>
+                  <span className="text-xs text-muted-foreground">Allocation</span>
+                  <span className="font-bold text-forest-700">Not set</span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Sprout className="h-5 w-5 text-forest-600 mb-1" />
@@ -128,9 +112,7 @@ const TokenomicsSection = () => {
                   <div key={index} className="border-b pb-4 last:border-0 last:pb-0">
                     <div className="flex justify-between items-center mb-2">
                       <h3 className="font-medium">{item.role}</h3>
-                      <span className="text-sm bg-forest-50 px-2 py-1 rounded text-forest-700">
-                        {circleDistribution.find(t => t.name === item.role)?.value}%
-                      </span>
+                      <span className="text-sm bg-forest-50 px-2 py-1 rounded text-forest-700">Review required</span>
                     </div>
                     <p className="text-sm text-muted-foreground">{item.schedule}</p>
                   </div>
@@ -166,8 +148,8 @@ const TokenomicsSection = () => {
               This prototype documents concept-stage assumptions only. It is not crypto, not blockchain, not a live sale, not an investment offer, and not a custody service.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Button className="bg-forest-600 hover:bg-forest-700">
-                Join Research List
+              <Button className="bg-forest-600 hover:bg-forest-700" asChild>
+                <a href="https://github.com/AIFreedomTrustFederation/Aether_Coin_biozonecurrency" target="_blank" rel="noopener noreferrer">Review Source</a>
               </Button>
               <Button variant="outline" className="border-forest-300 text-forest-700" asChild>
                 <a href={flightPaperUrl} target="_blank" rel="noopener noreferrer">

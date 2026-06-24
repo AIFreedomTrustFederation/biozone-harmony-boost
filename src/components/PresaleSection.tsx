@@ -12,7 +12,7 @@ const PresaleSection = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Join the <span className="gradient-text">Research List</span>
+            Follow the <span className="gradient-text">Research</span>
           </h2>
           <p className="text-muted-foreground">
             Follow the <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin</Link> concept as it develops. This prototype does not offer a live crypto token sale, investment product, or wallet custody service.
@@ -43,8 +43,8 @@ const PresaleSection = () => {
                     <div className="flex gap-4 items-start">
                       <div className="flex-shrink-0 w-8 h-8 rounded-full bg-forest-100 flex items-center justify-center text-forest-700 font-semibold">1</div>
                       <div>
-                        <h3 className="font-medium text-lg">Register Interest</h3>
-                        <p className="text-muted-foreground">Join the research list for updates. No payment, KYC, or token allocation is collected in this prototype.</p>
+                        <h3 className="font-medium text-lg">Review Source</h3>
+                        <p className="text-muted-foreground">Use the public repositories to follow progress. No payment, KYC, email capture, or token allocation is collected in this prototype.</p>
                       </div>
                     </div>
                     
@@ -66,8 +66,10 @@ const PresaleSection = () => {
                   </div>
                   
                   <div className="mt-6 flex flex-col sm:flex-row gap-4">
-                    <Button className="flex-1 bg-forest-600 hover:bg-forest-700">
-                      Register Interest <ArrowRight className="ml-2 h-4 w-4" />
+                    <Button className="flex-1 bg-forest-600 hover:bg-forest-700" asChild>
+                      <a href="https://github.com/AIFreedomTrustFederation/Aether_Coin_biozonecurrency" target="_blank" rel="noopener noreferrer">
+                        Review Source <ArrowRight className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                     <Button className="flex-1" variant="outline" asChild>
                       <Link to="/tokenomics">View Circleunchain Model</Link>
@@ -127,28 +129,28 @@ const PresaleSection = () => {
             <TabsContent value="impact">
               <Card className="border-forest-100">
                 <CardHeader>
-                  <CardTitle>Projected Environmental Impact</CardTitle>
-                  <CardDescription>Illustrative goals that require validation before launch</CardDescription>
+                  <CardTitle>Impact Review Requirements</CardTitle>
+                  <CardDescription>What must exist before environmental impact claims are published</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                     <div className="p-4 bg-forest-50 rounded-lg text-center">
-                      <div className="text-3xl font-bold text-forest-700 mb-1">100K+</div>
-                      <div className="text-sm text-forest-600">Tree-Planting Scenario</div>
+                      <div className="text-xl font-bold text-forest-700 mb-1">Evidence</div>
+                      <div className="text-sm text-forest-600">Public source records</div>
                     </div>
                     <div className="p-4 bg-forest-50 rounded-lg text-center">
-                      <div className="text-3xl font-bold text-forest-700 mb-1">50K</div>
-                      <div className="text-sm text-forest-600">Tons CO₂ to Offset</div>
+                      <div className="text-xl font-bold text-forest-700 mb-1">Review</div>
+                      <div className="text-sm text-forest-600">Method validation</div>
                     </div>
                     <div className="p-4 bg-forest-50 rounded-lg text-center">
-                      <div className="text-3xl font-bold text-forest-700 mb-1">5K</div>
-                      <div className="text-sm text-forest-600">Hectares to Protect</div>
+                      <div className="text-xl font-bold text-forest-700 mb-1">Governance</div>
+                      <div className="text-sm text-forest-600">Approval trail</div>
                     </div>
                   </div>
                   
                   <div className="text-center py-4">
                     <p className="text-muted-foreground mb-4">
-                      These figures are placeholders for research modeling. No live contribution, crypto sale, or custody service is active in this prototype.
+                      No live contribution, crypto sale, custody service, or verified environmental impact claim is active in this prototype.
                     </p>
                     <Button variant="outline" className="border-forest-300 text-forest-700" asChild>
                       <Link to="/tokenomics">View Circleunchain Model</Link>

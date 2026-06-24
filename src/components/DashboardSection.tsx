@@ -1,26 +1,33 @@
 
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { Target, Sprout, Users, Clock } from 'lucide-react';
-import { Link } from "react-router-dom";
+import { Sprout, Users, Clock, FileSearch, ShieldCheck } from 'lucide-react';
 
-const scenarioData = [
-  { name: 'Stage 1', target: 1000000, price: 0.0425 },
-  { name: 'Stage 2', target: 2500000, price: 0.0486 },
-  { name: 'Stage 3', target: 5000000, price: 0.0512 },
-  { name: 'Stage 4', target: 7500000, price: 0.0578 },
-  { name: 'Stage 5', target: 10000000, price: 0.0643 },
-  { name: 'Final', target: 15000000, price: 0.0728 }
+const releaseChecks = [
+  {
+    title: 'Concept review',
+    description: 'Document the Circleunchain model, assumptions, and non-production boundaries.'
+  },
+  {
+    title: 'Governance review',
+    description: 'Define who can approve releases, stewardship criteria, and public status changes.'
+  },
+  {
+    title: 'Technical review',
+    description: 'Publish implementation evidence before making network, API, wallet, or value claims.'
+  },
+  {
+    title: 'Security and legal review',
+    description: 'Complete review before any custody, signing, participation, or value-bearing workflow exists.'
+  }
 ];
 
-const biozoeGoals = [
-  { name: 'Amazon Rainforest', allocation: 25, progress: 0 },
-  { name: 'Great Barrier Reef', allocation: 18, progress: 0 },
-  { name: 'Congo Basin', allocation: 15, progress: 0 },
-  { name: 'Sundarbans Mangroves', allocation: 12, progress: 0 }
+const stewardshipChecks = [
+  'Public evidence records',
+  'Measurable stewardship criteria',
+  'Method review',
+  'Governance approval trail'
 ];
 
 const DashboardSection = () => {
@@ -40,50 +47,33 @@ const DashboardSection = () => {
           <Card className="lg:col-span-2 border-forest-100">
             <CardHeader className="flex flex-row items-start justify-between">
               <div>
-                <CardTitle>Concept Price Scenarios</CardTitle>
-                <CardDescription>Concept-stage modeling across hypothetical release phases</CardDescription>
+                <CardTitle>Release Review Path</CardTitle>
+                <CardDescription>What must happen before any production or value-bearing claim exists</CardDescription>
               </div>
               <Badge variant="outline" className="bg-forest-50 text-forest-700 border-forest-200">
                 <Clock className="h-3.5 w-3.5 mr-1" />
-                <span>Upcoming</span>
+                <span>Incubating</span>
               </Badge>
             </CardHeader>
             <CardContent>
-              <div className="h-[300px] w-full">
-                <ResponsiveContainer width="100%" height="100%">
-                  <LineChart data={scenarioData}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" />
-                    <XAxis dataKey="name" tick={{ fontSize: 12 }} />
-                    <YAxis 
-                      domain={[0.04, 0.08]} 
-                      tickFormatter={(value) => `$${value.toFixed(4)}`}
-                      tick={{ fontSize: 12 }}
-                    />
-                    <Tooltip 
-                      formatter={(value) => [`$${value}`, 'Scenario Price']}
-                      labelFormatter={(label) => `${label}`}
-                    />
-                    <Line 
-                      type="monotone" 
-                      dataKey="price" 
-                      stroke="#4d994d" 
-                      strokeWidth={2}
-                      dot={{ fill: '#4d994d', r: 4 }}
-                      activeDot={{ r: 6, fill: '#3d7d3d' }}
-                    />
-                  </LineChart>
-                </ResponsiveContainer>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {releaseChecks.map((item) => (
+                  <div key={item.title} className="p-4 bg-forest-50 rounded-lg border border-forest-100">
+                    <h3 className="font-medium text-forest-800 mb-2">{item.title}</h3>
+                    <p className="text-sm text-muted-foreground">{item.description}</p>
+                  </div>
+                ))}
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 mt-4 gap-4">
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
-                  <Target className="h-5 w-5 text-forest-600 mb-1" />
-                  <span className="text-xs text-muted-foreground">Scenario Goal</span>
-                  <span className="font-bold text-forest-700">$15M</span>
+                  <FileSearch className="h-5 w-5 text-forest-600 mb-1" />
+                  <span className="text-xs text-muted-foreground">Value claims</span>
+                  <span className="font-bold text-forest-700">Not active</span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Sprout className="h-5 w-5 text-forest-600 mb-1" />
-                  <span className="text-xs text-muted-foreground">Modeled Supply</span>
-                  <span className="font-bold text-forest-700">200M Biozoe</span>
+                  <span className="text-xs text-muted-foreground">Supply model</span>
+                  <span className="font-bold text-forest-700">Not set</span>
                 </div>
                 <div className="flex flex-col items-center bg-forest-50 p-3 rounded-lg">
                   <Users className="h-5 w-5 text-forest-600 mb-1" />
@@ -96,20 +86,17 @@ const DashboardSection = () => {
           
           <Card className="border-forest-100">
             <CardHeader>
-              <CardTitle>Biozoe Funding Goals</CardTitle>
-              <CardDescription>Illustrative allocation model for future review</CardDescription>
+              <CardTitle>Stewardship Evidence</CardTitle>
+              <CardDescription>Required evidence before environmental impact claims are made</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="space-y-8">
-                {biozoeGoals.map((zone, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex justify-between">
-                      <span className="text-sm font-medium">{zone.name}</span>
-                      <span className="text-sm text-muted-foreground">{zone.allocation}%</span>
-                    </div>
-                    <Progress value={zone.progress} className="h-2 bg-forest-100" />
-                    <div className="text-xs text-muted-foreground">
-                      Target allocation: {zone.allocation}% of total funds
+              <div className="space-y-4">
+                {stewardshipChecks.map((item) => (
+                  <div key={item} className="flex gap-3 items-start">
+                    <ShieldCheck className="h-5 w-5 text-forest-600 mt-0.5" />
+                    <div>
+                      <div className="text-sm font-medium">{item}</div>
+                      <div className="text-xs text-muted-foreground">Required before public impact claims.</div>
                     </div>
                   </div>
                 ))}

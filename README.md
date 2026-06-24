@@ -22,11 +22,11 @@ This repository is a live public web service for the concept interface. Biozoe C
 
 - Vite + React + TypeScript single-page application.
 - Tailwind/shadcn-style component system.
-- Circleunchain landing, biozoe coin model, participation concept, API concept, DApp placeholder, privacy, and terms pages.
+- Circleunchain landing, biozoe coin model, internal participation concept, internal interface concept, API concept, privacy, and terms pages.
 - GitHub repository information section.
 - Production build through Vite.
 - Public-claims language now labels value, participation, API, and network content as concept-stage research.
-- GitHub Pages deployment workflow.
+- GitHub Pages deployment workflow with a single-page app fallback for direct internal route refreshes.
 
 ## Setup
 
@@ -61,7 +61,7 @@ Current cleanup status:
 
 1. Keep the live GitHub Pages deployment healthy.
 2. Decide whether this remains a standalone incubating service or whether useful pieces should merge into `Aether_Coin_biozonecurrency`.
-3. Replace placeholder/social links with real federation links or remove them.
+3. Keep public links grounded in live federation routes and reviewed public repositories.
 4. Add tests if the app remains active.
 5. Review UI for accessibility and mobile layout before any broader public promotion.
 
