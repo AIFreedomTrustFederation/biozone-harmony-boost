@@ -52,7 +52,7 @@ const GitHubSection = () => {
         </div>
         
         <div className="max-w-3xl mx-auto mb-8">
-          <div className="flex gap-3 mb-6">
+          <div className="flex flex-col gap-3 mb-6 sm:flex-row">
             <div className="flex-1">
               <Input 
                 placeholder="Owner" 
@@ -96,11 +96,11 @@ const GitHubSection = () => {
               <TabsContent value="overview">
                 <Card className="border-forest-100">
                   <CardHeader>
-                    <CardTitle>{repository.full_name}</CardTitle>
-                    <CardDescription>{repository.description}</CardDescription>
+                    <CardTitle className="break-words">{repository.full_name}</CardTitle>
+                    <CardDescription className="break-words">{repository.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <div className="flex gap-6 mb-6">
+                    <div className="flex flex-wrap gap-4 sm:gap-6 mb-6">
                       <div className="flex items-center gap-2">
                         <Star className="h-5 w-5 text-yellow-500" />
                         <span><strong>{repository.stargazers_count}</strong> stars</span>
@@ -188,8 +188,8 @@ const GitHubSection = () => {
                               alt={pr.user.login} 
                               className="w-8 h-8 rounded-full mt-1"
                             />
-                            <div>
-                              <div className="font-medium">{pr.title}</div>
+                            <div className="min-w-0">
+                              <div className="font-medium break-words">{pr.title}</div>
                               <div className="text-sm text-muted-foreground mt-1">
                                 #{pr.number} opened by {pr.user.login} on {new Date(pr.created_at).toLocaleDateString()}
                               </div>
