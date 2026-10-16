@@ -101,7 +101,7 @@ $env:GITHUB_PAGES="true"; npm run build
 
 A successful build does not itself prove that deployed deep links, APIs, or browser navigation work; inspect the deployed site separately.
 
-**Current deployment gate limitation:** [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs `npm ci --no-audit` and `npm run build`, but does **not** run `npm run lint` or `npm run typecheck`. The separate [Local QA workflow](.github/workflows/qa.yml) runs those checks independently; GitHub Pages deployment does not wait for Local QA to succeed. Before treating a release as verified, confirm that Local QA succeeded for the same commit. A successful Pages deployment alone does not establish lint or typecheck success.
+**Deployment quality gate:** [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs `npm ci --no-audit`, `npm run lint`, `npm run typecheck`, and `npm run build` in the same build job, in that order. A lint or typecheck failure prevents the Pages artifact from being uploaded and the dependent deploy job from running. The separate [Local QA workflow](.github/workflows/qa.yml) also checks these commands. These gates do not constitute unit tests, runtime API verification, security auditing, or deployed-browser testing; the root `package.json` still has no `npm test` script.
 
 Verification includes:
 
