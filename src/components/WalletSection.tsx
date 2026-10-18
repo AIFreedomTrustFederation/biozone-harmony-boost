@@ -6,10 +6,10 @@ import { TabsContent, Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Wallet, ArrowRight, Clock, BarChart3, Send, Plus, Download } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const transactions = [
-  { id: 1, type: "Recorded", amount: "+2.5 Biozoe", from: "Circle Node A", date: "2 hours ago" },
-  { id: 2, type: "Committed", amount: "-5.0 Biozoe", to: "Ecosystem Pool", date: "1 day ago" },
-  { id: 3, type: "Shared", amount: "-1.2 Biozoe", to: "Circle Node B", date: "3 days ago" },
+const exampleTransactions = [
+  { id: 1, type: "Recorded", amount: "+2.5 Biozoe", from: "Circle Node A", date: "Example A" },
+  { id: 2, type: "Committed", amount: "-5.0 Biozoe", to: "Ecosystem Pool", date: "Example B" },
+  { id: 3, type: "Shared", amount: "-1.2 Biozoe", to: "Circle Node B", date: "Example C" },
 ];
 
 const WalletSection = () => {
@@ -18,10 +18,10 @@ const WalletSection = () => {
       <div className="container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            <span className="gradient-text">Aether Wallet</span> Interface
+            <span className="gradient-text">Aether Wallet</span> Concept Interface
           </h2>
           <p className="text-muted-foreground">
-            Explore a concept participation interface for <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin</Link>. This prototype does not provide custody, transaction signing, or production wallet security.
+            Explore a concept participation interface for <Link to="/tokenomics" className="text-forest-600 hover:underline">AetherCoin</Link>. This prototype does not provide custody, transaction signing, or production wallet security. All example activity is fictional; no live balances, exchange rates, or yields are displayed.
           </p>
         </div>
         
@@ -30,8 +30,8 @@ const WalletSection = () => {
             <CardHeader className="bg-forest-50 border-b border-forest-100">
               <div className="flex items-center justify-between">
                 <div>
-                  <CardTitle className="text-2xl">Aether Wallet</CardTitle>
-                  <CardDescription>Your gateway to the ecosystem</CardDescription>
+                  <CardTitle className="text-2xl">Aether Wallet (Concept Only)</CardTitle>
+                  <CardDescription>Static demonstration. No wallet is connected and all listed activity is fictional.</CardDescription>
                 </div>
                 <Wallet className="h-8 w-8 text-forest-600" />
               </div>
@@ -40,34 +40,34 @@ const WalletSection = () => {
             <Tabs defaultValue="dashboard">
               <div className="px-6 pt-6">
                 <TabsList className="grid grid-cols-3">
-                  <TabsTrigger value="dashboard">Dashboard</TabsTrigger>
-                  <TabsTrigger value="transactions">Transactions</TabsTrigger>
-                  <TabsTrigger value="stake">Staking</TabsTrigger>
+                  <TabsTrigger value="dashboard">Concept</TabsTrigger>
+                  <TabsTrigger value="transactions">Examples</TabsTrigger>
+                  <TabsTrigger value="stake">Staking Concept</TabsTrigger>
                 </TabsList>
               </div>
               
               <CardContent className="p-6">
                 <TabsContent value="dashboard" className="space-y-6">
                   <div className="text-center py-6">
-                    <p className="text-sm text-muted-foreground mb-1">Current Balance</p>
-                    <h3 className="text-4xl font-bold text-forest-800">45.28 Biozoe</h3>
-                    <p className="text-sm text-forest-600">≈ $3.29 USD</p>
+                    <p className="text-sm text-muted-foreground mb-1">Account balance</p>
+                    <h3 className="text-4xl font-bold text-forest-800">Not connected</h3>
+                    <p className="text-sm text-forest-600">No verified USD value</p>
                   </div>
                   
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <Button variant="outline" className="flex-col h-20 border-forest-200">
+                    <Button variant="outline" disabled className="flex-col h-20 border-forest-200">
                       <Send className="h-4 w-4 mb-1" />
                       <span>Send</span>
                     </Button>
-                    <Button variant="outline" className="flex-col h-20 border-forest-200">
+                    <Button variant="outline" disabled className="flex-col h-20 border-forest-200">
                       <Download className="h-4 w-4 mb-1" />
                       <span>Receive</span>
                     </Button>
-                    <Button variant="outline" className="flex-col h-20 border-forest-200">
+                    <Button variant="outline" disabled className="flex-col h-20 border-forest-200">
                       <Plus className="h-4 w-4 mb-1" />
                       <span>Buy</span>
                     </Button>
-                    <Button variant="outline" className="flex-col h-20 border-forest-200">
+                    <Button variant="outline" disabled className="flex-col h-20 border-forest-200">
                       <BarChart3 className="h-4 w-4 mb-1" />
                       <span>Stake</span>
                     </Button>
@@ -76,10 +76,10 @@ const WalletSection = () => {
                   <div className="bg-muted rounded-lg p-4">
                     <h4 className="font-medium mb-3 flex items-center">
                       <Clock className="h-4 w-4 mr-2" />
-                      Recent Transactions
+                      Illustrative Activity (Not Real)
                     </h4>
                     <div className="space-y-3">
-                      {transactions.slice(0, 2).map((tx) => (
+                      {exampleTransactions.slice(0, 2).map((tx) => (
                         <div key={tx.id} className="flex justify-between items-center">
                           <div>
                             <p className="font-medium">{tx.type}</p>
@@ -96,17 +96,17 @@ const WalletSection = () => {
                         </div>
                       ))}
                     </div>
-                    <Button variant="ghost" className="w-full mt-2 text-sm h-8">
-                      View all transactions
+                    <Button variant="ghost" disabled className="w-full mt-2 text-sm h-8">
+                      No live transactions
                     </Button>
                   </div>
                 </TabsContent>
                 
                 <TabsContent value="transactions" className="space-y-6">
                   <div className="space-y-4">
-                    <h3 className="font-medium">Transaction History</h3>
+                    <h3 className="font-medium">Fictional Activity Examples</h3>
                     <div className="border rounded-lg divide-y">
-                      {transactions.map((tx) => (
+                      {exampleTransactions.map((tx) => (
                         <div key={tx.id} className="p-4 flex justify-between items-center">
                           <div>
                             <p className="font-medium">{tx.type}</p>
@@ -121,17 +121,17 @@ const WalletSection = () => {
                         </div>
                       ))}
                     </div>
-                    <Button className="w-full" variant="outline">
-                      Load More
+                    <Button className="w-full" variant="outline" disabled>
+                      No live history
                     </Button>
                   </div>
                 </TabsContent>
                 
                 <TabsContent value="stake" className="space-y-6">
                   <div className="text-center py-4">
-                    <h3 className="text-lg font-medium mb-1">Total Staked</h3>
-                    <p className="text-3xl font-bold text-forest-800">12.5 Biozoe</p>
-                    <p className="text-sm text-muted-foreground">Current APY: 8.2%</p>
+                    <h3 className="text-lg font-medium mb-1">Live staking</h3>
+                    <p className="text-3xl font-bold text-forest-800">Not available</p>
+                    <p className="text-sm text-muted-foreground">No verified yield or staking service</p>
                   </div>
                   
                   <div className="bg-muted rounded-lg p-4">
@@ -140,26 +140,26 @@ const WalletSection = () => {
                       <div className="bg-background rounded border p-3">
                         <div className="flex justify-between mb-2">
                           <h5 className="font-medium">Ecosystem Pool</h5>
-                          <span className="text-sm bg-forest-100 px-2 py-0.5 rounded text-forest-700">8.2% APY</span>
+                          <span className="text-sm bg-forest-100 px-2 py-0.5 rounded text-forest-700">Not offered</span>
                         </div>
                         <p className="text-sm text-muted-foreground mb-3">
                           Model how staking-like commitments could support ecosystem development.
                         </p>
-                        <Button size="sm" className="bg-forest-600 hover:bg-forest-700">
-                          Stake Now
+                        <Button size="sm" disabled className="bg-forest-600 hover:bg-forest-700">
+                          Unavailable
                         </Button>
                       </div>
                       
                       <div className="bg-background rounded border p-3">
                         <div className="flex justify-between mb-2">
                           <h5 className="font-medium">Conservation Pool</h5>
-                          <span className="text-sm bg-forest-100 px-2 py-0.5 rounded text-forest-700">10.5% APY</span>
+                          <span className="text-sm bg-forest-100 px-2 py-0.5 rounded text-forest-700">Not offered</span>
                         </div>
                         <p className="text-sm text-muted-foreground mb-3">
                           Research stronger recognition for supporting direct conservation efforts.
                         </p>
-                        <Button size="sm" className="bg-forest-600 hover:bg-forest-700">
-                          Stake Now
+                        <Button size="sm" disabled className="bg-forest-600 hover:bg-forest-700">
+                          Unavailable
                         </Button>
                       </div>
                     </div>
@@ -172,7 +172,7 @@ const WalletSection = () => {
           <div className="mt-8 text-center">
             <Button className="bg-forest-600 hover:bg-forest-700" asChild>
               <Link to="/wallet">
-                Access Full Wallet <ArrowRight className="ml-2 h-4 w-4" />
+                Explore Wallet Concept <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>

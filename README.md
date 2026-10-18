@@ -73,6 +73,11 @@ npm install
 npm run dev
 ```
 
+
+### Wallet concept interface boundary
+
+The home-page `WalletSection` is a **static, fictional concept interface**, not an account dashboard. It displays no verified account balance, USD conversion, staking yield, or real transaction history. Example activity is labeled fictional; Send, Receive, Buy, Stake, history-loading, and staking-action controls are disabled. The `/wallet` route explains the same non-production boundary. Run `node --test tests/wallet-concept.test.mjs` for a lightweight source-contract check; this does not replace browser-level or security review.
+
 ### Reproducible checks and GitHub Pages routing
 
 The root [`package.json`](package.json) defines a real TypeScript check (`tsc --noEmit`) alongside ESLint and Vite build scripts, but **does not define an `npm test` script**. Do not report automated unit tests as passing based on the current root scripts. From the repository root, use:

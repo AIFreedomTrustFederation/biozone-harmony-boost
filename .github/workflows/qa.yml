@@ -40,6 +40,9 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
+      - name: Check wallet concept truthfulness
+        run: node --test tests/wallet-concept.test.mjs
+
       - name: Build GitHub Pages output
         env:
           GITHUB_PAGES: "true"
