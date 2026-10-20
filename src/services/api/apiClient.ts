@@ -19,7 +19,8 @@ class ApiClient {
     this.client.interceptors.response.use(
       (response) => response,
       (error) => {
-        console.error('API request failed:', error);
+        // Axios errors can include request headers (including bearer tokens).
+        // Preserve rejection semantics without copying credentials into logs.
         return Promise.reject(error);
       }
     );

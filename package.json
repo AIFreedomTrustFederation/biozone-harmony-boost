@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "test": "node --test tests/api-client-redaction.test.mjs",
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "typecheck": "tsc --noEmit",
