@@ -77,7 +77,7 @@ npm run dev
 
 ### Reproducible checks and GitHub Pages routing
 
-The root [`package.json`](package.json) defines a real TypeScript check (`tsc --noEmit`) alongside ESLint and Vite build scripts, and a **focused `npm test` script** for API-client credential-log protection. This is not comprehensive application test coverage. From the repository root, use:
+The root [`package.json`](package.json) defines explicit TypeScript checks for both the application (`tsc --noEmit -p tsconfig.app.json`) and Vite configuration (`tsc --noEmit -p tsconfig.node.json`) alongside ESLint and Vite build scripts. The root `tsconfig.json` contains only project references and an empty `files` array, so plain `tsc --noEmit` at the root does **not** check either project's source. The **focused `npm test` script** checks API-client credential-log protection and verifies that the typecheck command detects errors in both projects. This is not comprehensive application test coverage. From the repository root, use:
 
 ```bash
 npm ci
