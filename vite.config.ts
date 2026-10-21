@@ -6,7 +6,7 @@ import path from "path";
 export default defineConfig(() => ({
   base: process.env.GITHUB_PAGES === "true" ? "/biozone-harmony-boost/" : "/",
   server: {
-    host: "::",
+    host: "127.0.0.1",
     port: 8080,
   },
   plugins: [react()],

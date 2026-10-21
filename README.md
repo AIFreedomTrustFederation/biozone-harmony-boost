@@ -73,6 +73,8 @@ npm install
 npm run dev
 ```
 
+**Development server boundary:** `npm run dev` listens on `127.0.0.1:8080` by default, so the Vite development server is not exposed to other machines on the network. For an intentionally shared development session on a trusted network, explicitly opt in with `npm run dev -- --host 0.0.0.0`; do not use that option on untrusted networks or treat Vite's development server as an authenticated production service. The GitHub Pages build base remains unchanged.
+
 ### Reproducible checks and GitHub Pages routing
 
 The root [`package.json`](package.json) defines a real TypeScript check (`tsc --noEmit`) alongside ESLint and Vite build scripts, and a **focused `npm test` script** for API-client credential-log protection. This is not comprehensive application test coverage. From the repository root, use:
