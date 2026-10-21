@@ -34,7 +34,7 @@ jobs:
       - name: Install locked dependencies
         run: npm ci --no-audit
 
-      - name: API client credential-log regression
+      - name: Focused regression tests
         run: npm test
 
       - name: Lint

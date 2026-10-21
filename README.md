@@ -75,7 +75,7 @@ npm run dev
 
 ### Reproducible checks and GitHub Pages routing
 
-The root [`package.json`](package.json) defines a real TypeScript check (`tsc --noEmit`) alongside ESLint and Vite build scripts, and a **focused `npm test` script** for API-client credential-log protection. This is not comprehensive application test coverage. From the repository root, use:
+The root [`package.json`](package.json) defines a real TypeScript check (`tsc --noEmit`) alongside ESLint and Vite build scripts, and a **focused `npm test` script** for API-client credential-log protection and local development-server binding. This is not comprehensive application test coverage. From the repository root, use:
 
 ```bash
 npm ci
@@ -88,7 +88,7 @@ npm audit --audit-level=moderate
 
 `npm ci` requires an npm-compatible lockfile. `npm audit` reports advisories in the installed dependency graph; it is not a substitute for source review or application security testing. The API client propagates request errors without logging full Axios error objects (which can contain authorization headers); callers must also avoid logging those objects. These are recommended commands, not a claim that they passed in the current environment.
 
-The [`vite.config.ts`](vite.config.ts) configuration serves local development on port **8080** and uses `/` as the default base path. For the project GitHub Pages path, it switches the build base to `/biozone-harmony-boost/` only when `GITHUB_PAGES=true` is set. On POSIX shells:
+The [`vite.config.ts`](vite.config.ts) configuration binds local development to **127.0.0.1:8080** by default, rather than exposing the Vite development server to the network, and uses `/` as the default base path. For a trusted remote development environment, explicitly opt in with `npm run dev -- --host 0.0.0.0`; this exposes a development server and is not a production deployment. For the project GitHub Pages path, it switches the build base to `/biozone-harmony-boost/` only when `GITHUB_PAGES=true` is set. On POSIX shells:
 
 ```bash
 GITHUB_PAGES=true npm run build
@@ -102,7 +102,7 @@ $env:GITHUB_PAGES="true"; npm run build
 
 A successful build does not itself prove that deployed deep links, APIs, or browser navigation work; inspect the deployed site separately.
 
-**Deployment quality gate:** [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs `npm ci --no-audit`, `npm test`, `npm run lint`, `npm run typecheck`, and `npm run build` in the same build job, in that order. A lint or typecheck failure prevents the Pages artifact from being uploaded and the dependent deploy job from running. The separate [Local QA workflow](.github/workflows/qa.yml) also checks these commands. The focused `npm test` regression checks that API-client failures do not log request credentials; it does not establish broad application test coverage, runtime API verification, security auditing, or deployed-browser testing.
+**Deployment quality gate:** [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs `npm ci --no-audit`, `npm test`, `npm run lint`, `npm run typecheck`, and `npm run build` in the same build job, in that order. A lint or typecheck failure prevents the Pages artifact from being uploaded and the dependent deploy job from running. The separate [Local QA workflow](.github/workflows/qa.yml) also checks these commands. The focused `npm test` regressions check that API-client failures do not log request credentials and that the development server defaults to loopback; they do not establish broad application test coverage, runtime API verification, security auditing, or deployed-browser testing.
 
 Verification includes:
 
