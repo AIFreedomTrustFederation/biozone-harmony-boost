@@ -123,6 +123,8 @@ $env:GITHUB_PAGES="true"; npm run build
 
 The project should not represent a concept interface as a token sale, investment opportunity, audited custody service, production API, proven decentralized network, verified environmental impact, or medical/wellness guarantee unless the relevant implementation and evidence genuinely exist.
 
+**Wallet-preview boundary:** the home-page Aether Wallet section contains fictional example balances and activity, not connected account records. It displays no verified fiat valuation or staking yield; Send, Receive, Buy, Stake, and sample-history controls remain disabled. The `/wallet` route is an informational concept, not a functioning wallet.
+
 ---
 
 ## Book IV — From Ecological Meaning to Federated Action
