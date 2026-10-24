@@ -125,6 +125,8 @@ The project should not represent a concept interface as a token sale, investment
 
 **Wallet-preview boundary:** the home-page Aether Wallet section contains fictional example balances and activity, not connected account records. It displays no verified fiat valuation or staking yield; Send, Receive, Buy, Stake, and sample-history controls remain disabled. The `/wallet` route is an informational concept, not a functioning wallet.
 
+**API prototype boundary:** [`src/pages/Api.tsx`](src/pages/Api.tsx) shows *proposed* `https://api.aifreedomtrust.com/v1` endpoints, example bearer headers, and an SDK design sketch; this repository does not deploy those endpoints, issue API keys, or publish an installable SDK. [`src/services/api/index.ts`](src/services/api/index.ts) initializes a `FractalCoinApi` with the placeholder `https://api.fractalcoin.example` and a separate GitHub REST client; [`src/services/api/fractalCoinApi.ts`](src/services/api/fractalCoinApi.ts) implements HTTP request wrappers, not a transaction or custody backend. The [`API-client regression tests`](tests/api-client-redaction.test.mjs) verify credential-log handling with synthetic inputs, not live API availability or end-to-end authentication. Do not insert real credentials into sample requests or assume a separate service is operational without independent verification.
+
 ---
 
 ## Book IV — From Ecological Meaning to Federated Action
