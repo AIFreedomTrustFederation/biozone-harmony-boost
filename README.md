@@ -90,6 +90,8 @@ npm audit --audit-level=moderate
 
 `npm ci` requires an npm-compatible lockfile. `npm audit` reports advisories in the installed dependency graph; it is not a substitute for source review or application security testing. The API client propagates request errors without logging full Axios error objects (which can contain authorization headers); callers must also avoid logging those objects. These are recommended commands, not a claim that they passed in the current environment.
 
+**Federation synchronization evidence boundary:** [`.aift/capabilities.json`](.aift/capabilities.json) marks `sync` as `ready`, but its `git remote/status` descriptor is not an executable synchronization command or proof of a completed pull. The [repository status script](.aift/commands/status.sh) only reports `git status --short`; [`aift.repo.json`](aift.repo.json) separately advertises `git pull --ff-only`, which can modify the checkout if executed. Neither declaration proves that synchronization ran, reached a particular commit, or was authorized. Treat these as capability metadata and command descriptions, not verified synchronization outcomes.
+
 The [`vite.config.ts`](vite.config.ts) configuration serves local development on port **8080** and uses `/` as the default base path. For the project GitHub Pages path, it switches the build base to `/biozone-harmony-boost/` only when `GITHUB_PAGES=true` is set. On POSIX shells:
 
 ```bash
