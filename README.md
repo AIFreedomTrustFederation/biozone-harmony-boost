@@ -79,7 +79,7 @@ npm run dev
 
 ### Reproducible checks and GitHub Pages routing
 
-The root [`package.json`](package.json) defines explicit TypeScript checks for both the application (`tsc --noEmit -p tsconfig.app.json`) and Vite configuration (`tsc --noEmit -p tsconfig.node.json`) alongside ESLint and Vite build scripts. The root `tsconfig.json` contains only project references and an empty `files` array, so plain `tsc --noEmit` at the root does **not** check either project's source. The **focused `npm test` script** checks API-client credential-log protection and verifies that the typecheck command detects errors in both projects. This is not comprehensive application test coverage. From the repository root, use:
+The root [`package.json`](package.json) defines explicit TypeScript checks for both the application (`tsc --noEmit -p tsconfig.app.json`) and Vite configuration (`tsc --noEmit -p tsconfig.node.json`) alongside ESLint and Vite build scripts. The root `tsconfig.json` contains only project references and an empty `files` array, so plain `tsc --noEmit` at the root does **not** check either project's source. The **focused `npm test` suite** runs four regression files covering API-client credential-log protection, TypeScript project checks, loopback-only Vite development-server configuration and GitHub Pages build base, and illustrative wallet labels and disabled controls. These source-level checks do not establish live API or wallet operation, runtime security, or comprehensive application coverage. From the repository root, use:
 
 ```bash
 npm ci
@@ -108,7 +108,7 @@ $env:GITHUB_PAGES="true"; npm run build
 
 A successful build does not itself prove that deployed deep links, APIs, or browser navigation work; inspect the deployed site separately.
 
-**Deployment quality gate:** [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs `npm ci --no-audit`, `npm test`, `npm run lint`, `npm run typecheck`, and `npm run build` in the same build job, in that order. A lint or typecheck failure prevents the Pages artifact from being uploaded and the dependent deploy job from running. The separate [Local QA workflow](.github/workflows/qa.yml) also checks these commands. The focused `npm test` regression checks that API-client failures do not log request credentials; it does not establish broad application test coverage, runtime API verification, security auditing, or deployed-browser testing.
+**Deployment quality gate:** [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml) runs `npm ci --no-audit`, `npm test`, `npm run lint`, `npm run typecheck`, and `npm run build` in the same build job, in that order. A lint or typecheck failure prevents the Pages artifact from being uploaded and the dependent deploy job from running. The separate [Local QA workflow](.github/workflows/qa.yml) also checks these commands. The focused `npm test` regressions cover credential-log handling, typecheck behavior, static Vite configuration, and wallet-preview truthfulness; they do not establish broad application test coverage, runtime API verification, security auditing, or deployed-browser testing.
 
 Verification includes:
 
