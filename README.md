@@ -148,3 +148,10 @@ This is where the repository contributes something distinct to the Federation: i
 ### The Return of the Word
 
 In Biozone Harmony Boost, the Word returns as participation that still remembers the living world to which it refers. Observation becomes relationship, relationship becomes a proposed act of stewardship, stewardship becomes a verifiable change where verification is possible, and the result returns without pretending that life can be reduced to the interface that helped us see it.
+
+
+---
+
+## Proposed AIFT Universal OS Integration
+
+The [repository-specific OS alignment guide](docs/aift-universal-os-alignment.md) documents this repository's independent responsibility in a possible native/hosted AIFT application ecosystem: ecology and wellness concepts; no clinical or physical-device claims. These are **unverified engineering plans**, linked to the [central architecture and infographics draft](https://github.com/AIFreedomTrustFederation/AIFT-OS/pull/92), not a change to production services or permissions.
